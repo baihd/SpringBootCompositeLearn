@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-mybatis-multiple-datasource" />
+        <module name="springboot-mybatis-transaction" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-mybatis-generator" target="1.7" />
+      <module name="springboot-mybatis-multiple-datasource" target="1.7" />
+      <module name="springboot-mybatis-transaction" target="1.7" />
+      <module name="springboot-thrift-client" target="1.7" />
+      <module name="springboot-thrift-interface" target="1.7" />
+      <module name="springboot-thrift-server" target="1.7" />
+      <module name="springboot-zookeeper-thrift" target="1.7" />
+      <module name="springbootcomposite" target="1.7" />
+      <module name="springbootthriftinterfacetest" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

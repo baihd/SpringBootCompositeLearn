@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.composite.dao.MoreDataDao">
+    <!-- 查询所有user -->
+    <select id="getAllUser" resultType="java.util.Map">
+        select * from user
+    </select>
+
+    <!-- 添加数据并返回主键ID,接收主键,必须以实体类接收 -->
+    <!-- keyColumn="id"对应数据库字段,keyProperty="id"对应实体类属性  -->
+    <insert id="addUserGetID" parameterType="com.composite.entity.User" useGeneratedKeys="true" keyColumn="id"
+            keyProperty="id">
+        insert into user(name,createTime) values(#{name},#{createTime})
+    </insert>
+
+    <insert id="addUser">
+        insert into user(name,createTime) values(#{name},#{createTime})
+    </insert>
+
+</mapper>
