@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-config/spring-config.iml" filepath="$PROJECT_DIR$/spring-config/spring-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/springboot-mybatis-multiple-datasource.iml" filepath="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/springboot-mybatis-multiple-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" filepath="$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootcomposite.iml" filepath="$PROJECT_DIR$/springbootcomposite.iml" />

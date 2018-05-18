@@ -1,0 +1,11 @@
+person:
+  name: baihd
+  age: 28
+  number: ${random.int}
+  uuid: ${random.uuid}
+  max: ${random.int(10)}
+  value: ${random.value}
+  greeting: hi,i'm ${person.name}
+spring:
+  profiles:
+    active: dev

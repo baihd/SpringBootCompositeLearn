@@ -9,6 +9,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

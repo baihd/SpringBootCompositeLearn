@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d137b087-464d-4a2b-a415-f38d43c71682" name="Default" comment="" />
+    <list default="true" id="d137b087-464d-4a2b-a415-f38d43c71682" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-config/src/main/config/application-pro.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-config/src/main/java/com/composite/config/UserConfig.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spring-config/src/main/java/com/composite/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/springboot-thrift-server/target/" />
@@ -12,6 +22,8 @@
     <ignored path="$PROJECT_DIR$/springboot-mybatis-generator/target/" />
     <ignored path="$PROJECT_DIR$/springboot-mybatis-transaction/target/" />
     <ignored path="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-redis/target/" />
+    <ignored path="$PROJECT_DIR$/spring-config/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,71 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MybatisMapperScannerConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisMapperScannerConfig.java">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MybatisConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/config/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MoreDataServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/java/com/composite/service/impl/MoreDataServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSourceConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/DataSourceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSourceContextHolder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/java/com/composite/config/DataSourceContextHolder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="36" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSourceConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/java/com/composite/config/DataSourceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="37" />
+            <state relative-caret-position="382">
+              <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,32 +52,96 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SpringConfigApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/SpringConfigApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="41" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/config/application.yml">
+        <entry file="file://$PROJECT_DIR$/spring-config/src/main/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/UserController.java">
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config/src/main/config/application-dev.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/serviceImpl/UserServiceImpl.java">
+      <file leaf-file-name="test.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config/src/main/config/test.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+            <state relative-caret-position="18">
+              <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-pro.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config/src/main/config/application-pro.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/config/UserConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/config/PersonConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,7 +158,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>TNonblockingServerTransport</find>
       <find>THsHaServer</find>
       <find>TThreadPoolServer</find>
       <find>TThreadedSelectorServer</find>
@@ -172,6 +187,7 @@
       <find>dataSourceTest</find>
       <find>PlatformTransactionManager</find>
       <find>DataSourceTransactionManager</find>
+      <find>age</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -185,18 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springboot-thrift-client/src/main/java/com/composite/config/ZooKeeperConfig.java" />
-        <option value="$PROJECT_DIR$/springboot-thrift-client/src/main/java/com/composite/provider/AsyncCallback.java" />
-        <option value="$PROJECT_DIR$/springboot-thrift-client/src/main/java/com/composite/utils/ThriftUtils.java" />
-        <option value="$PROJECT_DIR$/springboot-thrift-client/src/main/java/com/composite/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/springboot-thrift-client/src/main/java/com/composite/provider/UserServiceProvider.java" />
-        <option value="$PROJECT_DIR$/springboot-thrift-client/src/main/java/com/composite/utils/CommonServiceUtils.java" />
-        <option value="$PROJECT_DIR$/springboot-thrift-interface/src/main/java/com/composite/thrift/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/springbootmybatistransaction/SpringbootMybatisTransactionApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/serviceImpl/UserService.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/model/User.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/UserService.java" />
         <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/mapper/UserDao.java" />
         <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/mapper/UserMapper.xml" />
@@ -222,7 +226,6 @@
         <option value="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/java/com/composite/service/MoreDataService.java" />
         <option value="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/DataSourceTest.java" />
         <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/UserController.java" />
         <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/SpringBootMybatisTransactionApplication.java" />
@@ -236,6 +239,19 @@
         <option value="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/java/com/composite/service/impl/MoreDataServiceImpl.java" />
         <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/serviceImpl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisConfig.java" />
+        <option value="$PROJECT_DIR$/springboot-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/java/com/composite/springconfig/SpringConfigApplication.java" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/java/com/composite/config/PersonConfig.java" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/java/com/composite/config/UserConfig.java" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/config/test.properties" />
+        <option value="$PROJECT_DIR$/spring-config/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/java/com/composite/controller/PersonController.java" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/config/application-dev.yml" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/config/application-pro.yml" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/config/application.yml" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/java/com/composite/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/spring-config/src/main/java/com/composite/SpringConfigApplication.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -258,26 +274,31 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-mybatis-multiple-datasource" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="spring-config" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-mybatis-multiple-datasource" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="spring-config" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="springboot-mybatis-transaction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="springboot-mybatis-transaction" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="207" />
-    <option name="y" value="98" />
-    <option name="width" value="1552" />
-    <option name="height" value="948" />
+    <option name="x" value="593" />
+    <option name="y" value="259" />
+    <option name="width" value="1554" />
+    <option name="height" value="1012" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -305,252 +326,6 @@
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-multiple-datasource" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="serviceImpl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-mybatis-transaction" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootmybatistransaction" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -574,7 +349,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="SearchEverywhereHistoryKey" value="TProcessorFactory&#9;PSI&#9;JAVA://org.apache.thrift.TProcessorFactory" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/java/com/composite" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/spring-config/src/main/java/com/composite" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -582,11 +357,11 @@
       <recent name="com.composite" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-config/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config" />
       <recent name="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/mapper" />
       <recent name="$PROJECT_DIR$/springboot-thrift-interface/src/main/java/com/composite/config" />
-      <recent name="$PROJECT_DIR$/springboot-thrift-client/src/main/java/com/composite/config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.composite.config" />
@@ -596,11 +371,11 @@
       <recent name="com.composite.thrift.service.impl" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/spring-config/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-mybatis-generator/src/main/resources" />
       <recent name="$PROJECT_DIR$/springboot-mybatis-generator/src/main/resources/mybatis-generator" />
-      <recent name="$PROJECT_DIR$/springboot-thrift-interface/src/main/resources/mybatis/mapper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -615,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootMybatisTransactionApplication">
+  <component name="RunManager" selected="Spring Boot.SpringConfigApplication (1)">
     <configuration name="SpringBootMybatisMultipleDatasourceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -636,6 +411,23 @@
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootMybatisTransactionApplication" />
       <module name="springboot-mybatis-transaction" />
+      <envs />
+    </configuration>
+    <configuration name="SpringConfigApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringConfigApplication" />
+      <module name="spring-config" />
+      <envs />
+    </configuration>
+    <configuration name="SpringConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.springconfig.SpringConfigApplication" />
+      <module name="spring-config" />
       <envs />
     </configuration>
     <configuration name="SpringbootMybatisGeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -667,6 +459,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="springboot-mybatis-transaction" />
+      <envs />
+    </configuration>
+    <configuration name="SpringbootRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.springbootredis.SpringbootRedisApplication" />
+      <module name="springboot-redis" />
       <envs />
     </configuration>
     <configuration name="SpringbootThriftClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -785,7 +583,7 @@
       <properties />
       <listeners />
     </configuration>
-    <list size="9">
+    <list size="12">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringbootThriftServerApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringbootThriftClientApplication" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringbootThriftInterfaceApplication" />
@@ -795,12 +593,16 @@
       <item index="6" class="java.lang.String" itemvalue="Spring Boot.SpringBootMybatisTransactionApplication" />
       <item index="7" class="java.lang.String" itemvalue="Spring Boot.SpringbootMybatisMultipleDatasourceApplication" />
       <item index="8" class="java.lang.String" itemvalue="Spring Boot.SpringBootMybatisMultipleDatasourceApplication" />
+      <item index="9" class="java.lang.String" itemvalue="Spring Boot.SpringbootRedisApplication" />
+      <item index="10" class="java.lang.String" itemvalue="Spring Boot.SpringConfigApplication" />
+      <item index="11" class="java.lang.String" itemvalue="Spring Boot.SpringConfigApplication (1)" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringBootMybatisTransactionApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringBootMybatisMultipleDatasourceApplication" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SpringbootMybatisTransactionApplication" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringConfigApplication (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringBootMybatisTransactionApplication" />
+        <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringBootMybatisMultipleDatasourceApplication" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SpringbootMybatisTransactionApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -827,12 +629,12 @@
       <workItem from="1525222761665" duration="8125000" />
       <workItem from="1525317776032" duration="42951000" />
       <workItem from="1525667088769" duration="1284000" />
-      <workItem from="1526459598304" duration="36332000" />
+      <workItem from="1526459598304" duration="45725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196903000" />
+    <option name="totallyTimeSpent" value="206296000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -845,7 +647,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
@@ -856,14 +657,14 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34562698" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34562698" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49841937" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2402529" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28451002" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28451002" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18614958" sideWeight="0.5139912" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26238146" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -1077,117 +878,11 @@
           <option name="timeStamp" value="246" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="247" />
+      <option name="time" value="256" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot-zookeeper-thrift/src/main/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-generator/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-generator/src/main/resources/generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-generator/src/main/java/com/composite/domain/UserTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/dao/UserTableMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/mapper/UserTableMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="102" column="78" lean-forward="false" selection-start-line="102" selection-start-column="69" selection-end-line="102" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/model/UserTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="29" lean-forward="false" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="29" />
-          <folding>
-            <marker date="1526525650355" expanded="true" signature="958:1016" ph="SELECT FROM... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.6.RELEASE/spring-boot-autoconfigure-1.5.6.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceTransactionManagerAutoConfiguration.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-thrift-interface/src/main/java/com/composite/config/MybatisMapperScannerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.1/mybatis-spring-1.3.1.jar!/org/mybatis/spring/SqlSessionFactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="144" column="36" lean-forward="false" selection-start-line="144" selection-start-column="36" selection-end-line="144" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///usr/lib/jvm/jdk1.7.0_80/src.zip!/javax/sql/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="73" column="17" lean-forward="false" selection-start-line="73" selection-start-column="17" selection-end-line="73" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-thrift-interface/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
@@ -1254,14 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="80" column="12" lean-forward="false" selection-start-line="13" selection-start-column="3" selection-end-line="80" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/java/com/composite/service/impl/MoreDataService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1282,14 +969,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1394,22 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/SpringBootMybatisTransactionApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1431,7 +1094,7 @@
         <state relative-caret-position="436">
           <caret line="58" column="37" lean-forward="false" selection-start-line="58" selection-start-column="11" selection-end-line="58" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1444,26 +1107,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisMapperScannerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/serviceImpl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1472,14 +1119,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -1495,7 +1134,176 @@
     <entry file="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/java/com/composite/service/impl/MoreDataServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="34" column="22" lean-forward="true" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/SpringBootMybatisTransactionApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-424">
+          <caret line="23" column="12" lean-forward="false" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisMapperScannerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="80" column="12" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="80" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.8.RELEASE/spring-boot-1.5.8.RELEASE.jar!/org/springframework/boot/context/config/RandomValuePropertySource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.8.RELEASE/spring-boot-autoconfigure-1.5.8.RELEASE.jar!/org/springframework/boot/autoconfigure/web/ServerProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="224" column="16" lean-forward="false" selection-start-line="224" selection-start-column="16" selection-end-line="224" selection-end-column="16" />
+          <folding>
+            <element signature="e#8447#8448#0" expanded="true" />
+            <element signature="e#8479#8480#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="41" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/config/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/config/application-pro.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/controller/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/config/test.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="22" lean-forward="false" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/config/UserConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/config/PersonConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/SpringConfigApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-config/src/main/java/com/composite/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="47" lean-forward="false" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
           <folding />
         </state>
       </provider>
@@ -1554,7 +1362,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>springboot-mybatis-multiple-datasource</last-edited>
+          <last-edited>spring-config</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
