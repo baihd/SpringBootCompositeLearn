@@ -16,6 +16,7 @@
         <module>springboot-mybatis-transaction</module>
         <module>springboot-mybatis-multiple-datasource</module>
         <module>spring-config</module>
+        <module>springboot-jpa</module>
     </modules>
 
     <!-- 继承说明：这里继承SpringBoot提供的父工程 -->

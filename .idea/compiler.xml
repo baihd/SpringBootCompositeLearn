@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-config" />
+        <module name="springboot-jpa" />
         <module name="springboot-mybatis-multiple-datasource" />
         <module name="springboot-mybatis-transaction" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-config" target="1.7" />
+      <module name="springboot-jpa" target="1.7" />
       <module name="springboot-mybatis-generator" target="1.7" />
       <module name="springboot-mybatis-multiple-datasource" target="1.7" />
       <module name="springboot-mybatis-transaction" target="1.7" />
