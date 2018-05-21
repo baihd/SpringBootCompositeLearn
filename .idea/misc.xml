@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/pom.xml" />
         <option value="$PROJECT_DIR$/spring-config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-beatlsql/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

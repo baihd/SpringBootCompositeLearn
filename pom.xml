@@ -17,6 +17,7 @@
         <module>springboot-mybatis-multiple-datasource</module>
         <module>spring-config</module>
         <module>springboot-jpa</module>
+        <module>springboot-beatlsql</module>
     </modules>
 
     <!-- 继承说明：这里继承SpringBoot提供的父工程 -->
@@ -46,6 +47,8 @@
         <mybatis-generator-core.version>1.3.5</mybatis-generator-core.version>
         <spring-boot-starter-data-jpa.version>1.5.13.RELEASE</spring-boot-starter-data-jpa.version>
         <ons-client.version>1.2.6</ons-client.version>
+        <beetl.version>2.7.23</beetl.version>
+        <beetlsql.version>2.9.12</beetlsql.version>
     </properties>
 
     <!-- 版本说明：这里统一管理依赖的版本号 -->

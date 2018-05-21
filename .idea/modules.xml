@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/spring-config/spring-config.iml" filepath="$PROJECT_DIR$/spring-config/spring-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" filepath="$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-jpa/springboot-jpa.iml" filepath="$PROJECT_DIR$/springboot-jpa/springboot-jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/springboot-mybatis-multiple-datasource.iml" filepath="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/springboot-mybatis-multiple-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" filepath="$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" />
