@@ -9,6 +9,7 @@
         <module name="spring-config" />
         <module name="springboot-beatlsql" />
         <module name="springboot-jpa" />
+        <module name="springboot-mongodb" />
         <module name="springboot-mybatis-multiple-datasource" />
         <module name="springboot-mybatis-transaction" />
       </profile>
@@ -17,6 +18,7 @@
       <module name="spring-config" target="1.7" />
       <module name="springboot-beatlsql" target="1.7" />
       <module name="springboot-jpa" target="1.7" />
+      <module name="springboot-mongodb" target="1.7" />
       <module name="springboot-mybatis-generator" target="1.7" />
       <module name="springboot-mybatis-multiple-datasource" target="1.7" />
       <module name="springboot-mybatis-transaction" target="1.7" />
