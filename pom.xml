@@ -18,6 +18,7 @@
         <module>spring-config</module>
         <module>springboot-jpa</module>
         <module>springboot-beatlsql</module>
+        <module>springboot-swagger2</module>
     </modules>
 
     <!-- 继承说明：这里继承SpringBoot提供的父工程 -->
@@ -49,6 +50,8 @@
         <ons-client.version>1.2.6</ons-client.version>
         <beetl.version>2.7.23</beetl.version>
         <beetlsql.version>2.9.12</beetlsql.version>
+        <springfox-swagger2.version>2.6.1</springfox-swagger2.version>
+        <springfox-swagger-ui.version>2.6.1</springfox-swagger-ui.version>
     </properties>
 
     <!-- 版本说明：这里统一管理依赖的版本号 -->
