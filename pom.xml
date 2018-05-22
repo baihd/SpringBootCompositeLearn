@@ -52,6 +52,7 @@
         <beetlsql.version>2.9.12</beetlsql.version>
         <springfox-swagger2.version>2.6.1</springfox-swagger2.version>
         <springfox-swagger-ui.version>2.6.1</springfox-swagger-ui.version>
+        <asciidoctor-maven-plugin.version>1.5.3</asciidoctor-maven-plugin.version>
     </properties>
 
     <!-- 版本说明：这里统一管理依赖的版本号 -->
