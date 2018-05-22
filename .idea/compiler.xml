@@ -12,6 +12,7 @@
         <module name="springboot-mongodb" />
         <module name="springboot-mybatis-multiple-datasource" />
         <module name="springboot-mybatis-transaction" />
+        <module name="springboot-redis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
