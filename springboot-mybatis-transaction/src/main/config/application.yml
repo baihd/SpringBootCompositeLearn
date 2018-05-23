@@ -5,6 +5,10 @@ spring:
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
+  http:
+    multipart:
+      max-file-size: 128KB
+      max-request-size: 1280KB
 
 server:
   address: 127.0.0.1
@@ -14,3 +18,4 @@ server:
     compression: on
     #配置Tomcat编码，默认为UTF-8
     uri-encoding: UTF-8
+

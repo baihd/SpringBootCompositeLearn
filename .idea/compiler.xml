@@ -24,18 +24,12 @@
       <module name="springboot-cache" target="1.7" />
       <module name="springboot-jpa" target="1.7" />
       <module name="springboot-mongodb" target="1.7" />
-      <module name="springboot-mybatis-generator" target="1.7" />
       <module name="springboot-mybatis-multiple-datasource" target="1.7" />
       <module name="springboot-mybatis-transaction" target="1.7" />
       <module name="springboot-redis" target="1.7" />
       <module name="springboot-restdocs" target="1.7" />
       <module name="springboot-swagger2" target="1.7" />
-      <module name="springboot-thrift-client" target="1.7" />
-      <module name="springboot-thrift-interface" target="1.7" />
-      <module name="springboot-thrift-server" target="1.7" />
-      <module name="springboot-zookeeper-thrift" target="1.7" />
       <module name="springbootcomposite" target="1.7" />
-      <module name="springbootthriftinterfacetest" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
