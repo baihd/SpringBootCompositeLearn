@@ -11,4 +11,7 @@ public interface UserDao {
     int insert(Map<String, Object> userMap);
 
     List<Map<String, Object>> selectUsers();
+
+    List<Map<String, Object>> selectUsersByName(String name);
+
 }

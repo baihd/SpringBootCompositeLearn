@@ -29,4 +29,9 @@ public class UserServiceImpl implements UserService {
     public List<Map<String, Object>> selectUsers() {
         return userDao.selectUsers();
     }
+
+    @Override
+    public List<Map<String, Object>> selectUsersByName(String name) {
+        return userDao.selectUsersByName(name);
+    }
 }
