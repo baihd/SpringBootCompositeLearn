@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" filepath="$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-restdocs/springboot-restdocs.iml" filepath="$PROJECT_DIR$/springboot-restdocs/springboot-restdocs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-springsecurity/springboot-springsecurity.iml" filepath="$PROJECT_DIR$/springboot-springsecurity/springboot-springsecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" filepath="$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootcomposite.iml" filepath="$PROJECT_DIR$/springbootcomposite.iml" />
     </modules>

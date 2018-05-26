@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/springboot-restdocs/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-cache/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-asynchronous/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-springsecurity/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

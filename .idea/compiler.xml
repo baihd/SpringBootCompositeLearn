@@ -16,6 +16,7 @@
         <module name="springboot-mybatis-transaction" />
         <module name="springboot-redis" />
         <module name="springboot-restdocs" />
+        <module name="springboot-springsecurity" />
         <module name="springboot-swagger2" />
       </profile>
     </annotationProcessing>
@@ -30,6 +31,7 @@
       <module name="springboot-mybatis-transaction" target="1.7" />
       <module name="springboot-redis" target="1.7" />
       <module name="springboot-restdocs" target="1.7" />
+      <module name="springboot-springsecurity" target="1.7" />
       <module name="springboot-swagger2" target="1.7" />
       <module name="springbootcomposite" target="1.7" />
     </bytecodeTargetLevel>
