@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d137b087-464d-4a2b-a415-f38d43c71682" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_5_8_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_springsecurity4_2_1_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebMvcConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebSecurityConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/dao/SysUserRepository.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/service/CustomUserService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-config/pom.xml" afterPath="$PROJECT_DIR$/spring-config/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,6 +30,9 @@
     <ignored path="$PROJECT_DIR$/springboot-cache/target/" />
     <ignored path="$PROJECT_DIR$/springboot-asynchronous/target/" />
     <ignored path="$PROJECT_DIR$/springboot-springsecurity/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-shiro/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-shiro-more/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-elk/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,118 +52,64 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SpringBootSpringSecurityApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/SpringBootSpringSecurityApplication.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-elk/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="690">
+              <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Msg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/Msg.java">
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-elk/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="64" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringbootElkApplicationTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springboot-elk/src/test/java/com/composite/springbootelk/SpringbootElkApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringbootElkApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-elk/src/main/java/com/composite/springbootelk/SpringbootElkApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/pom.xml">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-868">
-              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="323">
+              <caret line="62" column="43" lean-forward="false" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysUserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/dao/SysUserRepository.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-swagger2/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysUser.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-244">
-              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SysRole.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysRole.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CustomUserService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/service/CustomUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebMvcConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebMvcConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/controller/HomeController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebSecurityConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#695#696#0" expanded="true" />
-                <element signature="e#741#742#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="179">
+              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -187,22 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>PlatformTransactionManager</find>
-      <find>DataSourceTransactionManager</find>
-      <find>age</find>
-      <find>beetlViewResolver</find>
-      <find>sqlManagerFactoryBean</find>
-      <find>beetlSqlScannerConfigurer</find>
-      <find>beetlConfig</find>
-      <find>beetlsql</find>
-      <find>temp</find>
-      <find>spring.datasource</find>
-      <find>dataSourceTest</find>
-      <find>swagger-ui.html</find>
-      <find>简单优雅的restfun风格</find>
-      <find>required</find>
-      <find>listenerAdapter</find>
-      <find>ConfigurationProperties</find>
       <find>spring-boot-configuration-processor</find>
       <find>storage</find>
       <find>fileUpload</find>
@@ -216,8 +141,27 @@
       <find>HttpClient</find>
       <find>TrustStrategy</find>
       <find>thymeleaf-extras-springsecurity4</find>
+      <find>Filter</find>
+      <find>lifecycleBeanPostProcessor</find>
       <find>mysql-connector-java</find>
+      <find>c3p0</find>
+      <find>mybatis-spring</find>
+      <find>mybatis</find>
+      <find>Event</find>
+      <find>com.us.bean.Permission</find>
+      <find>PermissionDao</find>
+      <find>org/apache/commons/logging/LogFactory</find>
+      <find>logging</find>
+      <find>LogFactory</find>
+      <find>commons-logging</find>
+      <find>Role</find>
+      <find>api/fabu/selectRenYuanXinXiList</find>
+      <find>stuService</find>
+      <find>app</find>
     </findStrings>
+    <replaceStrings>
+      <replace>com.composite.entity.Permission</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -230,57 +174,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/storage/StorageException.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/storage/StorageFileNotFoundException.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/storage/StorageProperties.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/storage/StorageService.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/storage/FileSystemStorageService.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/uploadForm.html" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/fileupload.html" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/mutifileupload.html" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/config/application.yml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/FileUploadController.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/multiFileUpload.html" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/fileUpload.html" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/task/ScheduledTasks.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/SpringBootMybatisTransactionApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/model/PersonForm.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/model/Person.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/results.html" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/form.html" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/PersonController.java" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/springbootasynchronous/SpringbootAsynchronousApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/src/main/config/application.yml" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/utils/RestClientUtil.java" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/utils/SSLClient.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/UserService.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/serviceImpl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/service/GitHubLookupService.java" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/entity/User.java" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/AppRunner.java" />
-        <option value="$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/SpringBootAsynchronousApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/config/application.yml" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/springbootspringsecurity/SpringbootSpringsecurityApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysRole.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysUser.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/SpringBootSpringSecurityApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/Msg.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebMvcConfig.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebSecurityConfig.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/resources/templates/login.html" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/controller/HomeController.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/resources/static/bootstrap-theme.css" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/resources/static/bootstrap-theme.css.map" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/resources/static/bootstrap-theme.min.css" />
         <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/dao/SysUserRepository.java" />
         <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/service/CustomUserService.java" />
+        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/config/application.yml" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/springbootshiro/SpringbootShiroApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/ShiroRealm.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/ShiroConfiguration.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/entity/Event.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/entity/Permission.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/entity/User.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/entity/Role.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/service/EventService.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/dao/EventDao.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/dao/PermissionDao.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/service/PermissionService.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/dao/RoleDao.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/service/UserService.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/MapperScannerConfig.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/TransactionConfig.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/MyBatisConfig.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/DataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/config/application.yml" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/resources/mapper/EventDaoMapper.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/resources/mapper/PermissionDaoMapper.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/resources/mapper/RoleDaoMapper.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/EventController.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/SpringBootShiroApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/shiro/ShiroRealm.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/resources/mapper/UserDaoMapper.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/springbootshiromore/SpringbootShiroMoreApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/springbootshiromore/SpringBootShiroMoreApplication.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/entity/User.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/entity/Role.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/entity/Permission.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/shiro/MyShiroRealm.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/resources/ehcache-shiro.xml" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/shiro/MyShiroFilterFactoryBean.java" />
+        <option value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/shiro/ShiroConfiguration.java" />
+        <option value="$PROJECT_DIR$/springboot-elk/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-elk/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-elk/src/test/java/com/composite/springbootelk/SpringbootElkApplicationTests.java" />
+        <option value="$PROJECT_DIR$/springboot-elk/target/classes/log4j.properties" />
+        <option value="$PROJECT_DIR$/springboot-elk/README.md" />
+        <option value="$PROJECT_DIR$/springboot-elk/src/main/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -303,20 +247,20 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-springsecurity" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="springboot-elk" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="springboot-springsecurity" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="springboot-elk" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="266" />
-    <option name="y" value="39" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="304" />
+    <option name="y" value="359" />
     <option name="width" value="1550" />
     <option name="height" value="996" />
   </component>
@@ -351,118 +295,37 @@
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name=".mvn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-springsecurity" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootelk" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -476,7 +339,7 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../personWorkSpace/springboot/springbootcomposite4" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SDK" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -487,7 +350,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="SearchEverywhereHistoryKey" value="TProcessorFactory&#9;PSI&#9;JAVA://org.apache.thrift.TProcessorFactory" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
@@ -496,11 +359,11 @@
       <recent name="com.composite" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springboot-elk" />
+      <recent name="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/shiro" />
+      <recent name="$PROJECT_DIR$/springboot-shiro/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-springsecurity/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-asynchronous/src/main/config" />
-      <recent name="$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates" />
-      <recent name="$PROJECT_DIR$/springboot-restdocs/src/main/config" />
-      <recent name="$PROJECT_DIR$/springboot-swagger2/src/main/config" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.composite.entity" />
@@ -510,11 +373,11 @@
       <recent name="com.composite.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springboot-elk/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-springsecurity/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/springboot-beatlsql/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-jpa/src/main/config" />
       <recent name="$PROJECT_DIR$/spring-config/src/main/config" />
-      <recent name="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/src/main/config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -529,69 +392,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringBootSpringSecurityApplication">
+  <component name="RunManager" selected="JUnit.SpringbootElkApplicationTests.contextLoads">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.demo.DemoApplication" />
       <module name="springboot-swagger2" />
       <envs />
     </configuration>
-    <configuration name="RestClientUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.compostie.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.compostie.utils.RestClientUtil" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="springboot-asynchronous" />
-      <envs />
-    </configuration>
-    <configuration name="SpringBootAsynchronousApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.compostie.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.compostie.SpringBootAsynchronousApplication" />
-      <module name="springboot-asynchronous" />
-      <envs />
-    </configuration>
-    <configuration name="SpringBootCacheApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootCacheApplication" />
-      <module name="springboot-cache" />
-      <envs />
-    </configuration>
-    <configuration name="SpringBootMybatisTransactionApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootMybatisTransactionApplication" />
-      <module name="springboot-mybatis-transaction" />
-      <envs />
-    </configuration>
     <configuration name="SpringBootRestdocsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootRestdocsApplication" />
       <module name="springboot-restdocs" />
+      <envs />
+    </configuration>
+    <configuration name="SpringBootShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootShiroApplication" />
+      <module name="springboot-shiro" />
       <envs />
     </configuration>
     <configuration name="SpringBootSpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -622,6 +444,81 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.springbootcache.SpringbootCacheApplication" />
       <module name="springboot-cache" />
       <envs />
+    </configuration>
+    <configuration name="SpringbootElkApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.springbootelk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot-elk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.composite.springbootelk" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.springbootelk.SpringbootElkApplicationTests" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringbootElkApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.springbootelk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot-elk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.composite.springbootelk" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.springbootelk.SpringbootElkApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringbootElkApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.springbootelk.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot-elk" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.composite.springbootelk" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.springbootelk.SpringbootElkApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="SpringbootMongodbApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
@@ -749,19 +646,19 @@
       <item index="6" class="java.lang.String" itemvalue="Spring Boot.SpringBootRestdocsApplication" />
       <item index="7" class="java.lang.String" itemvalue="Spring Boot.SpringbootAsynchronousApplication" />
       <item index="8" class="java.lang.String" itemvalue="Spring Boot.SpringbootSpringsecurityApplication" />
-      <item index="9" class="java.lang.String" itemvalue="Spring Boot.SpringBootCacheApplication" />
-      <item index="10" class="java.lang.String" itemvalue="Spring Boot.SpringBootMybatisTransactionApplication" />
-      <item index="11" class="java.lang.String" itemvalue="Spring Boot.SpringBootAsynchronousApplication" />
-      <item index="12" class="java.lang.String" itemvalue="Application.RestClientUtil" />
-      <item index="13" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
+      <item index="9" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
+      <item index="10" class="java.lang.String" itemvalue="Spring Boot.SpringBootShiroApplication" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests.test" />
+      <item index="12" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests" />
+      <item index="13" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests.contextLoads" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringBootAsynchronousApplication" />
-        <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringBootMybatisTransactionApplication" />
-        <item index="3" class="java.lang.String" itemvalue="Application.RestClientUtil" />
-        <item index="4" class="java.lang.String" itemvalue="Spring Boot.SpringBootCacheApplication" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests.contextLoads" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests.test" />
+        <item index="3" class="java.lang.String" itemvalue="Spring Boot.SpringBootShiroApplication" />
+        <item index="4" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -796,38 +693,44 @@
       <workItem from="1526970071731" duration="41063000" />
       <workItem from="1527209075169" duration="4077000" />
       <workItem from="1527312814483" duration="4237000" />
-      <workItem from="1527317114833" duration="1816000" />
+      <workItem from="1527317114833" duration="29842000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpringbootRestdocsApplicationTests - 2018.05.22 at 14h 02m 37s.xml">
-      <configuration name="SpringbootRestdocsApplicationTests" configurationId="JUnit" />
+    <history-entry file="SpringbootElkApplicationTests - 2018.06.04 at 15h 23m 51s.xml">
+      <configuration name="SpringbootElkApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebLayerTest - 2018.05.22 at 14h 01m 43s.xml">
-      <configuration name="WebLayerTest" configurationId="JUnit" />
+    <history-entry file="SpringbootElkApplicationTests - 2018.06.04 at 18h 10m 16s.xml">
+      <configuration name="SpringbootElkApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebLayerTest - 2018.05.22 at 14h 02m 55s.xml">
-      <configuration name="WebLayerTest" configurationId="JUnit" />
+    <history-entry file="SpringbootElkApplicationTests - 2018.06.04 at 18h 34m 37s.xml">
+      <configuration name="SpringbootElkApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebLayerTest - 2018.05.22 at 14h 04m 35s.xml">
-      <configuration name="WebLayerTest" configurationId="JUnit" />
+    <history-entry file="SpringbootElkApplicationTests - 2018.06.04 at 18h 58m 44s.xml">
+      <configuration name="SpringbootElkApplicationTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebLayerTest - 2018.05.22 at 14h 05m 38s.xml">
-      <configuration name="WebLayerTest" configurationId="JUnit" />
+    <history-entry file="SpringbootElkApplicationTests_contextLoads - 2018.06.04 at 18h 02m 15s.xml">
+      <configuration name="SpringbootElkApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebLayerTest - 2018.05.22 at 14h 40m 09s.xml">
-      <configuration name="WebLayerTest" configurationId="JUnit" />
+    <history-entry file="SpringbootElkApplicationTests_contextLoads - 2018.06.04 at 18h 18m 46s.xml">
+      <configuration name="SpringbootElkApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebLayerTest - 2018.05.22 at 14h 40m 32s.xml">
-      <configuration name="WebLayerTest" configurationId="JUnit" />
+    <history-entry file="SpringbootElkApplicationTests_contextLoads - 2018.06.04 at 18h 23m 05s.xml">
+      <configuration name="SpringbootElkApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootElkApplicationTests_contextLoads - 2018.06.04 at 19h 49m 50s.xml">
+      <configuration name="SpringbootElkApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SpringbootElkApplicationTests_test - 2018.06.04 at 15h 21m 26s.xml">
+      <configuration name="SpringbootElkApplicationTests.test" configurationId="JUnit" />
     </history-entry>
     <history-entry file="WebLayerTest_shouldReturnDefaultMessage - 2018.05.22 at 14h 36m 58s.xml">
       <configuration name="WebLayerTest.shouldReturnDefaultMessage" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="285517000" />
+    <option name="totallyTimeSpent" value="313543000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -839,8 +742,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="266" y="39" width="1550" height="996" extended-state="0" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -849,21 +751,22 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31070197" sideWeight="0.50266314" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.208" sideWeight="0.48016417" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38675958" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17285319" sideWeight="0.48016417" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34984195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2402529" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36880928" sideWeight="0.4973369" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36817655" sideWeight="0.4973369" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20466666" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15401661" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32349843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33681765" sideWeight="0.4973369" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.4973369" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -873,7 +776,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19889197" sideWeight="0.5198358" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32349843" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1305,192 +1207,41 @@
           <properties />
           <option name="timeStamp" value="394" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/LoginController.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="399" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/UserController.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="400" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/UserController.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="401" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="398" />
+      <option name="time" value="402" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/storage/StorageFileNotFoundException.java" />
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/storage/StorageException.java" />
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/storage/FileSystemStorageService.java" />
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/task/ScheduledTasks.java">
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/results.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="7" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/templates/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="43" lean-forward="false" selection-start-line="2" selection-start-column="43" selection-end-line="2" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-redis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="30" selection-start-column="8" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.8.RELEASE/spring-boot-1.5.8.RELEASE.jar!/org/springframework/boot/SpringApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="465" column="0" lean-forward="false" selection-start-line="465" selection-start-column="0" selection-end-line="465" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="135" column="17" lean-forward="false" selection-start-line="135" selection-start-column="17" selection-end-line="135" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/src/main/config/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="12" lean-forward="false" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="540">
+          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.4.1/httpclient-4.4.1.jar!/org/apache/http/impl/client/HttpClients.class">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/DataSourceConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.12.RELEASE/spring-web-4.3.12.RELEASE.jar!/org/springframework/web/bind/annotation/PostMapping.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/PersonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="9" lean-forward="false" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/FileUploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="40" column="9" lean-forward="false" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/SpringBootMybatisTransactionApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/service/serviceImpl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/utils/RestClientUtil.java" />
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/utils/SSLClient.java" />
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/service/GitHubLookupService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="252">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
@@ -1498,191 +1249,452 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/AppRunner.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/MapperScannerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="26" column="35" lean-forward="false" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+        <state relative-caret-position="270">
+          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/src/main/java/com/compostie/SpringBootAsynchronousApplication.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/MyBatisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="25" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="238">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-asynchronous/src/test/java/com/compostie/springbootasynchronous/SpringbootAsynchronousApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/TransactionConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="306">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/pom.xml">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/resources/mapper/EventDaoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="95" column="12" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="95" selection-end-column="12" />
+        <state relative-caret-position="36">
+          <caret line="2" column="40" lean-forward="false" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
+          <folding>
+            <marker date="1527327887753" expanded="true" signature="5150:5169" ph="SELECT * FRO... event" />
+            <marker date="1527327887753" expanded="true" signature="5302:5337" ph="SELECT * FRO... event" />
+            <marker date="1527327887753" expanded="true" signature="6568:7313" ph="UPDATE event... " />
+            <marker date="1527327887753" expanded="true" signature="7382:7416" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/resources/mapper/PermissionDaoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="52" lean-forward="false" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+          <folding>
+            <marker date="1527327887809" expanded="true" signature="1310:1334" ph="SELECT * FRO... permission" />
+            <marker date="1527327887809" expanded="true" signature="1472:1512" ph="SELECT * FRO... permission" />
+            <marker date="1527327887809" expanded="true" signature="1588:1612" ph="SELECT * fro... permission" />
+            <marker date="1527327887809" expanded="true" signature="1712:1979" ph="select p.* f... user" />
+            <marker date="1527327887809" expanded="true" signature="2534:2712" ph="UPDATE permi... " />
+            <marker date="1527327887809" expanded="true" signature="2781:2820" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/config/application.yml">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/resources/mapper/RoleDaoMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="44" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="6" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="36">
+          <caret line="2" column="41" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="41" />
+          <folding>
+            <marker date="1527327887657" expanded="true" signature="1097:1115" ph="SELECT * FRO... role" />
+            <marker date="1527327887657" expanded="true" signature="1247:1281" ph="SELECT * FRO... role" />
+            <marker date="1527327887657" expanded="true" signature="1775:1911" ph="UPDATE role " />
+            <marker date="1527327887657" expanded="true" signature="1980:2013" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/ManyToMany.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/config/application.yml">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/SpringBootShiroApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#362#363#0" expanded="false" />
+            <element signature="e#439#440#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/resources/static/bootstrap-theme.min.css">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/dao/EventDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/resources/static/bootstrap-theme.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="0" column="39361" lean-forward="false" selection-start-line="0" selection-start-column="39361" selection-end-line="0" selection-end-column="39361" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/resources/static/bootstrap-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="793">
-          <caret line="439" column="0" lean-forward="false" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-868">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/SpringBootSpringSecurityApplication.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/dao/PermissionDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/dao/RoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebMvcConfig.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="144">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebSecurityConfig.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/service/EventService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="14" column="23" lean-forward="false" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="214">
+          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#695#696#0" expanded="true" />
-            <element signature="e#741#742#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/controller/HomeController.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/service/PermissionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="38" />
+        <state relative-caret-position="216">
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#525#526#0" expanded="false" />
+            <element signature="e#573#574#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/dao/SysUserRepository.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/service/RoleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/service/CustomUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/Msg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="64" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysRole.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/resources/mapper/UserDaoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="15" lean-forward="false" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+          <folding>
+            <marker date="1527328544465" expanded="true" signature="3046:3064" ph="SELECT * FRO... user" />
+            <marker date="1527328544465" expanded="true" signature="3196:3230" ph="SELECT * FRO... user" />
+            <marker date="1527328544465" expanded="true" signature="3329:3506" ph="select u.* ,... user" />
+            <marker date="1527328544465" expanded="true" signature="4280:4647" ph="UPDATE user " />
+            <marker date="1527328544465" expanded="true" signature="4716:4749" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="4" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="117" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="121" column="12" lean-forward="false" selection-start-line="121" selection-start-column="12" selection-end-line="121" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/entity/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="63" column="24" lean-forward="false" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/resources/ehcache-shiro.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="27" lean-forward="true" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/shiro/MyShiroFilterFactoryBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1332">
+          <caret line="74" column="22" lean-forward="false" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/dao/ScoreDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/shiro/ShiroConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1682">
+          <caret line="120" column="142" lean-forward="false" selection-start-line="120" selection-start-column="142" selection-end-line="120" selection-end-column="142" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/SpringBootShiroMoreApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro-more/src/main/java/com/composite/shiro/MyShiroRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1011">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/entity/Event.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/entity/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="38" column="39" lean-forward="false" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <folding>
+            <element signature="e#700#701#0" expanded="true" />
+            <element signature="e#746#747#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1104">
+          <caret line="133" column="46" lean-forward="false" selection-start-line="133" selection-start-column="46" selection-end-line="133" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/EventController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/shiro/ShiroRealm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysUser.java">
+    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/shiro/ShiroConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-244">
-          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="24">
+          <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-swagger2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="62" column="43" lean-forward="false" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/src/main/java/com/composite/springbootelk/SpringbootElkApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/target/classes/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/target/classes/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="60" selection-end-line="17" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2520">
+            <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/src/test/java/com/composite/springbootelk/SpringbootElkApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1743,7 +1755,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>springboot-springsecurity</last-edited>
+          <last-edited>springboot-elk</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1768,7 +1780,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.1.11</last-edited>
+          <last-edited>Maven: org.springframework.boot:spring-boot-starter-log4j:1.3.8.RELEASE</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -10,12 +10,14 @@
         <module name="springboot-asynchronous" />
         <module name="springboot-beatlsql" />
         <module name="springboot-cache" />
+        <module name="springboot-elk" />
         <module name="springboot-jpa" />
         <module name="springboot-mongodb" />
         <module name="springboot-mybatis-multiple-datasource" />
         <module name="springboot-mybatis-transaction" />
         <module name="springboot-redis" />
         <module name="springboot-restdocs" />
+        <module name="springboot-shiro" />
         <module name="springboot-springsecurity" />
         <module name="springboot-swagger2" />
       </profile>
@@ -25,12 +27,15 @@
       <module name="springboot-asynchronous" target="1.7" />
       <module name="springboot-beatlsql" target="1.7" />
       <module name="springboot-cache" target="1.7" />
+      <module name="springboot-elk" target="1.7" />
       <module name="springboot-jpa" target="1.7" />
       <module name="springboot-mongodb" target="1.7" />
       <module name="springboot-mybatis-multiple-datasource" target="1.7" />
       <module name="springboot-mybatis-transaction" target="1.7" />
       <module name="springboot-redis" target="1.7" />
       <module name="springboot-restdocs" target="1.7" />
+      <module name="springboot-shiro" target="1.7" />
+      <module name="springboot-shiro-more" target="1.7" />
       <module name="springboot-springsecurity" target="1.7" />
       <module name="springboot-swagger2" target="1.7" />
       <module name="springbootcomposite" target="1.7" />
