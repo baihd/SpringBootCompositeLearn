@@ -25,7 +25,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-config" target="1.7" />
+      <module name="spring-config" target="10" />
       <module name="springboot-asynchronous" target="1.7" />
       <module name="springboot-beatlsql" target="1.7" />
       <module name="springboot-cache" target="1.7" />
