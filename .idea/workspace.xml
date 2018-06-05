@@ -7,8 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spring-config/pom.xml" afterPath="$PROJECT_DIR$/spring-config/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,6 +31,7 @@
     <ignored path="$PROJECT_DIR$/springboot-shiro/target/" />
     <ignored path="$PROJECT_DIR$/springboot-shiro-more/target/" />
     <ignored path="$PROJECT_DIR$/springboot-elk/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-jms/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,52 +52,30 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-elk/pom.xml">
+        <entry file="file://$PROJECT_DIR$/springboot-jms/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="61" column="20" lean-forward="false" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+            <state relative-caret-position="241">
+              <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-elk/src/main/resources/log4j.properties">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-jms/src/main/config/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="54">
+              <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SpringbootElkApplicationTests.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-elk/src/test/java/com/composite/springbootelk/SpringbootElkApplicationTests.java">
+      <file leaf-file-name="SpringbootJmsApplicationTests.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springboot-jms/src/test/java/com/composite/springbootjms/SpringbootJmsApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SpringbootElkApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-elk/src/main/java/com/composite/springbootelk/SpringbootElkApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="62" column="43" lean-forward="false" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
+            <state relative-caret-position="-88">
+              <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -107,8 +84,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-swagger2/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="286">
+              <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -174,9 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/dao/SysUserRepository.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/service/CustomUserService.java" />
-        <option value="$PROJECT_DIR$/springboot-springsecurity/src/main/config/application.yml" />
         <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/springbootshiro/SpringbootShiroApplication.java" />
         <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/ShiroRealm.java" />
         <option value="$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/ShiroConfiguration.java" />
@@ -223,8 +197,11 @@
         <option value="$PROJECT_DIR$/springboot-elk/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-elk/src/test/java/com/composite/springbootelk/SpringbootElkApplicationTests.java" />
         <option value="$PROJECT_DIR$/springboot-elk/target/classes/log4j.properties" />
-        <option value="$PROJECT_DIR$/springboot-elk/README.md" />
         <option value="$PROJECT_DIR$/springboot-elk/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/springboot-elk/README.md" />
+        <option value="$PROJECT_DIR$/springboot-jms/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jms/src/main/config/application.yml" />
+        <option value="$PROJECT_DIR$/springboot-jms/src/test/java/com/composite/springbootjms/SpringbootJmsApplicationTests.java" />
       </list>
     </option>
   </component>
@@ -259,8 +236,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="304" />
-    <option name="y" value="359" />
+    <option name="x" value="265" />
+    <option name="y" value="261" />
     <option name="width" value="1550" />
     <option name="height" value="996" />
   </component>
@@ -295,25 +272,48 @@
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-jms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-jms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-jms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-jms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-jms" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-jms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-jms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -321,11 +321,16 @@
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
               <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-elk" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-jms" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="springbootelk" type="462c0819:PsiDirectoryNode" />
+              <item name="springbootjms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-swagger2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -373,11 +378,11 @@
       <recent name="com.composite.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/springboot-jms/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-elk/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-springsecurity/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/springboot-beatlsql/src/main/config" />
       <recent name="$PROJECT_DIR$/springboot-jpa/src/main/config" />
-      <recent name="$PROJECT_DIR$/spring-config/src/main/config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -392,7 +397,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SpringbootElkApplicationTests.contextLoads">
+  <component name="RunManager" selected="JUnit.SpringbootJmsApplicationTests.sendAttachedImageMail">
     <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.demo.DemoApplication" />
@@ -403,28 +408,6 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootRestdocsApplication" />
       <module name="springboot-restdocs" />
-      <envs />
-    </configuration>
-    <configuration name="SpringBootShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootShiroApplication" />
-      <module name="springboot-shiro" />
-      <envs />
-    </configuration>
-    <configuration name="SpringBootSpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootSpringSecurityApplication" />
-      <module name="springboot-springsecurity" />
       <envs />
     </configuration>
     <configuration name="SpringbootAsynchronousApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -445,18 +428,18 @@
       <module name="springboot-cache" />
       <envs />
     </configuration>
-    <configuration name="SpringbootElkApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringbootJmsApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.composite.springbootelk.*" />
+          <option name="PATTERN" value="com.composite.springbootjms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="springboot-elk" />
+      <module name="springboot-jms" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.composite.springbootelk" />
-      <option name="MAIN_CLASS_NAME" value="com.composite.springbootelk.SpringbootElkApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.composite.springbootjms" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.springbootjms.SpringbootJmsApplicationTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -470,18 +453,18 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SpringbootElkApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringbootJmsApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.composite.springbootelk.*" />
+          <option name="PATTERN" value="com.composite.springbootjms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="springboot-elk" />
+      <module name="springboot-jms" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.composite.springbootelk" />
-      <option name="MAIN_CLASS_NAME" value="com.composite.springbootelk.SpringbootElkApplicationTests" />
+      <option name="PACKAGE_NAME" value="com.composite.springbootjms" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.springbootjms.SpringbootJmsApplicationTests" />
       <option name="METHOD_NAME" value="contextLoads" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -495,19 +478,69 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="SpringbootElkApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SpringbootJmsApplicationTests.sendAttachedImageMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.composite.springbootelk.*" />
+          <option name="PATTERN" value="com.composite.springbootjms.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="springboot-elk" />
+      <module name="springboot-jms" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.composite.springbootelk" />
-      <option name="MAIN_CLASS_NAME" value="com.composite.springbootelk.SpringbootElkApplicationTests" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="PACKAGE_NAME" value="com.composite.springbootjms" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.springbootjms.SpringbootJmsApplicationTests" />
+      <option name="METHOD_NAME" value="sendAttachedImageMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringbootJmsApplicationTests.sendAttendedFileMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.springbootjms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot-jms" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.composite.springbootjms" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.springbootjms.SpringbootJmsApplicationTests" />
+      <option name="METHOD_NAME" value="sendAttendedFileMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="SpringbootJmsApplicationTests.sendTxtMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.springbootjms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="springboot-jms" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.composite.springbootjms" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.springbootjms.SpringbootJmsApplicationTests" />
+      <option name="METHOD_NAME" value="sendTxtMail" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -646,19 +679,19 @@
       <item index="6" class="java.lang.String" itemvalue="Spring Boot.SpringBootRestdocsApplication" />
       <item index="7" class="java.lang.String" itemvalue="Spring Boot.SpringbootAsynchronousApplication" />
       <item index="8" class="java.lang.String" itemvalue="Spring Boot.SpringbootSpringsecurityApplication" />
-      <item index="9" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
-      <item index="10" class="java.lang.String" itemvalue="Spring Boot.SpringBootShiroApplication" />
-      <item index="11" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests.test" />
-      <item index="12" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests" />
-      <item index="13" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests.contextLoads" />
+      <item index="9" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests" />
+      <item index="10" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests.sendTxtMail" />
+      <item index="11" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests.contextLoads" />
+      <item index="12" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests.sendAttachedImageMail" />
+      <item index="13" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests.sendAttendedFileMail" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests.contextLoads" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.SpringbootElkApplicationTests.test" />
-        <item index="3" class="java.lang.String" itemvalue="Spring Boot.SpringBootShiroApplication" />
-        <item index="4" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests.sendAttachedImageMail" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests.sendAttendedFileMail" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests.sendTxtMail" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests.contextLoads" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.SpringbootJmsApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -693,44 +726,44 @@
       <workItem from="1526970071731" duration="41063000" />
       <workItem from="1527209075169" duration="4077000" />
       <workItem from="1527312814483" duration="4237000" />
-      <workItem from="1527317114833" duration="29842000" />
+      <workItem from="1527317114833" duration="35228000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SpringbootElkApplicationTests - 2018.06.04 at 15h 23m 51s.xml">
-      <configuration name="SpringbootElkApplicationTests" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_contextLoads - 2018.06.05 at 09h 45m 15s.xml">
+      <configuration name="SpringbootJmsApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringbootElkApplicationTests - 2018.06.04 at 18h 10m 16s.xml">
-      <configuration name="SpringbootElkApplicationTests" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendAttachedImageMail - 2018.06.05 at 10h 09m 43s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendAttachedImageMail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringbootElkApplicationTests - 2018.06.04 at 18h 34m 37s.xml">
-      <configuration name="SpringbootElkApplicationTests" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendAttachedImageMail - 2018.06.05 at 10h 29m 15s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendAttachedImageMail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringbootElkApplicationTests - 2018.06.04 at 18h 58m 44s.xml">
-      <configuration name="SpringbootElkApplicationTests" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendAttendedFileMail - 2018.06.05 at 10h 10m 26s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendAttendedFileMail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringbootElkApplicationTests_contextLoads - 2018.06.04 at 18h 02m 15s.xml">
-      <configuration name="SpringbootElkApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendTxtMail - 2018.06.05 at 09h 45m 33s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendTxtMail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringbootElkApplicationTests_contextLoads - 2018.06.04 at 18h 18m 46s.xml">
-      <configuration name="SpringbootElkApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendTxtMail - 2018.06.05 at 09h 46m 59s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendTxtMail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringbootElkApplicationTests_contextLoads - 2018.06.04 at 18h 23m 05s.xml">
-      <configuration name="SpringbootElkApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendTxtMail - 2018.06.05 at 09h 47m 29s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendTxtMail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringbootElkApplicationTests_contextLoads - 2018.06.04 at 19h 49m 50s.xml">
-      <configuration name="SpringbootElkApplicationTests.contextLoads" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendTxtMail - 2018.06.05 at 09h 57m 40s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendTxtMail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SpringbootElkApplicationTests_test - 2018.06.04 at 15h 21m 26s.xml">
-      <configuration name="SpringbootElkApplicationTests.test" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendTxtMail - 2018.06.05 at 09h 59m 06s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendTxtMail" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="WebLayerTest_shouldReturnDefaultMessage - 2018.05.22 at 14h 36m 58s.xml">
-      <configuration name="WebLayerTest.shouldReturnDefaultMessage" configurationId="JUnit" />
+    <history-entry file="SpringbootJmsApplicationTests_sendTxtMail - 2018.06.05 at 10h 00m 42s.xml">
+      <configuration name="SpringbootJmsApplicationTests.sendTxtMail" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313543000" />
+    <option name="totallyTimeSpent" value="318929000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -743,6 +776,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -752,10 +786,10 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31070197" sideWeight="0.50266314" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17285319" sideWeight="0.48016417" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34984195" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.44257113" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2402529" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948583" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36817655" sideWeight="0.4973369" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36775553" sideWeight="0.4973369" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15401661" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -766,7 +800,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39936775" sideWeight="0.4973369" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49736565" sideWeight="0.4973369" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1231,34 +1265,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis-transaction/src/main/java/com/composite/config/MybatisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="47" column="18" lean-forward="false" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/DataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/MapperScannerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="1" lean-forward="true" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-shiro/src/main/java/com/composite/config/MyBatisConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1624,14 +1630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-swagger2/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="25" column="21" lean-forward="false" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1672,11 +1670,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-elk/src/test/java/com/composite/springbootelk/SpringbootElkApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-elk/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2520">
-            <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <first_editor relative-caret-position="468">
+            <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
@@ -1691,13 +1699,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-elk/src/test/java/com/composite/springbootelk/SpringbootElkApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/springboot-swagger2/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="286">
+          <caret line="38" column="8" lean-forward="false" selection-start-line="38" selection-start-column="8" selection-end-line="42" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jms/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jms/src/main/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jms/src/test/java/com/composite/springbootjms/SpringbootJmsApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="59" column="65" lean-forward="true" selection-start-line="59" selection-start-column="65" selection-end-line="59" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1755,7 +1785,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>springboot-elk</last-edited>
+          <last-edited>springboot-jms</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

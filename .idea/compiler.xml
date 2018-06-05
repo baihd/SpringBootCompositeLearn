@@ -11,6 +11,7 @@
         <module name="springboot-beatlsql" />
         <module name="springboot-cache" />
         <module name="springboot-elk" />
+        <module name="springboot-jms" />
         <module name="springboot-jpa" />
         <module name="springboot-mongodb" />
         <module name="springboot-mybatis-multiple-datasource" />
@@ -28,6 +29,7 @@
       <module name="springboot-beatlsql" target="1.7" />
       <module name="springboot-cache" target="1.7" />
       <module name="springboot-elk" target="1.7" />
+      <module name="springboot-jms" target="1.7" />
       <module name="springboot-jpa" target="1.7" />
       <module name="springboot-mongodb" target="1.7" />
       <module name="springboot-mybatis-multiple-datasource" target="1.7" />
