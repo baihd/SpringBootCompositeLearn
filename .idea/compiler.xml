@@ -16,6 +16,7 @@
         <module name="springboot-mongodb" />
         <module name="springboot-mybatis-multiple-datasource" />
         <module name="springboot-mybatis-transaction" />
+        <module name="springboot-rabbitmq" />
         <module name="springboot-redis" />
         <module name="springboot-restdocs" />
         <module name="springboot-shiro" />
@@ -34,6 +35,7 @@
       <module name="springboot-mongodb" target="1.7" />
       <module name="springboot-mybatis-multiple-datasource" target="1.7" />
       <module name="springboot-mybatis-transaction" target="1.7" />
+      <module name="springboot-rabbitmq" target="1.7" />
       <module name="springboot-redis" target="1.7" />
       <module name="springboot-restdocs" target="1.7" />
       <module name="springboot-shiro" target="1.7" />
