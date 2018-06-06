@@ -1,15 +1,15 @@
 package com.composite.receive;
 
+import com.composite.entity.TestUser;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@RabbitListener(queues = "hello")
-public class HelloReceiver {
-
+@RabbitListener(queues = "TOPICQUEUE1")
+public class Topic1Receiver {
     @RabbitHandler
-    public void process(String hello) {
-        System.out.println("Receiver:" + hello);
+    public void process(TestUser testUser) {
+        System.out.println("Topic Receiver1:" + testUser.toString());
     }
 }

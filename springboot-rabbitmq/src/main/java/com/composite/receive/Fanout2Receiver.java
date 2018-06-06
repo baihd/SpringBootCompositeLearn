@@ -1,15 +1,16 @@
 package com.composite.receive;
 
+import com.composite.entity.TestUser;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
 @Component
-@RabbitListener(queues = "fanout.C")
-public class FanoutReceiverC {
+@RabbitListener(queues = "FANOUTQUEUE2")
+public class Fanout2Receiver {
 
     @RabbitHandler
-    public void process(String message) {
-        System.out.println("fanout Receiver C  : " + message);
+    public void process(TestUser testUser) {
+        System.out.println("fanout Receiver B  : " + testUser.toString());
     }
 }
