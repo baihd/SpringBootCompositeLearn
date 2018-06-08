@@ -23,7 +23,10 @@ public class RabbitMqExchangeConfig {
 
     @Bean
     Queue fanoutQueue1(RabbitAdmin rabbitAdmin) {
-        Queue queue = new Queue(RabbitMqEnum.QueueName.FANOUTQUEUE1.getCode());
+        //durable：持久化
+        //exclusive：排他队列，如果一个队列被声明为排他队列，该队列仅对首次申明它的连接可见，并在连接断开时自动删除。
+        //autoDelete：自动删除，如果该队列没有任何订阅的消费者的话，该队列会被自动删除。
+        Queue queue = new Queue(RabbitMqEnum.QueueName.FANOUTQUEUE1.getCode(), true, true, true);
         rabbitAdmin.declareQueue(queue);
         logger.debug("fanout测试队列实例化完成");
         return queue;
@@ -31,7 +34,7 @@ public class RabbitMqExchangeConfig {
 
     @Bean
     Queue fanoutQueue2(RabbitAdmin rabbitAdmin) {
-        Queue queue = new Queue(RabbitMqEnum.QueueName.FANOUTQUEUE2.getCode());
+        Queue queue = new Queue(RabbitMqEnum.QueueName.FANOUTQUEUE2.getCode(), true, true, true);
         rabbitAdmin.declareQueue(queue);
         logger.debug("fanout测试队列实例化完成");
         return queue;
@@ -39,12 +42,15 @@ public class RabbitMqExchangeConfig {
 
     /**
      * 订阅型交换机
+     *
      * @param rabbitAdmin
      * @return
      */
     @Bean
     FanoutExchange fanoutExchange(RabbitAdmin rabbitAdmin) {
-        FanoutExchange fanoutExchange = new FanoutExchange(RabbitMqEnum.Exchange.CONTRACT_FANOUT.getCode());
+        //durable：持久化
+        //autoDelete：自动删除，如果该队列没有任何订阅的消费者的话，该队列会被自动删除。
+        FanoutExchange fanoutExchange = new FanoutExchange(RabbitMqEnum.Exchange.CONTRACT_FANOUT.getCode(), true, true);
         rabbitAdmin.declareExchange(fanoutExchange);
         logger.debug("完成订阅型交换机bean实例化");
         return fanoutExchange;
@@ -68,7 +74,7 @@ public class RabbitMqExchangeConfig {
 
     @Bean
     Queue directQueue(RabbitAdmin rabbitAdmin) {
-        Queue queue = new Queue(RabbitMqEnum.QueueName.DIRECTQUEUE.getCode());
+        Queue queue = new Queue(RabbitMqEnum.QueueName.DIRECTQUEUE.getCode(), true, true, true);
         rabbitAdmin.declareQueue(queue);
         logger.debug("direct测试队列实例化完成");
         return queue;
@@ -82,7 +88,7 @@ public class RabbitMqExchangeConfig {
      */
     @Bean
     DirectExchange directExchange(RabbitAdmin rabbitAdmin) {
-        DirectExchange directExchange = new DirectExchange(RabbitMqEnum.Exchange.CONTRACT_DIRECT.getCode());
+        DirectExchange directExchange = new DirectExchange(RabbitMqEnum.Exchange.CONTRACT_DIRECT.getCode(), true, true);
         rabbitAdmin.declareExchange(directExchange);
         logger.debug("完成直连型交换机bean实例化");
         return directExchange;
@@ -100,7 +106,7 @@ public class RabbitMqExchangeConfig {
 
     @Bean
     Queue topicQueue1(RabbitAdmin rabbitAdmin) {
-        Queue queue = new Queue(RabbitMqEnum.QueueName.TOPICQUEUE1.getCode());
+        Queue queue = new Queue(RabbitMqEnum.QueueName.TOPICQUEUE1.getCode(), true, true, true);
         rabbitAdmin.declareQueue(queue);
         logger.debug("topic测试队列1实例化完成");
         return queue;
@@ -108,7 +114,7 @@ public class RabbitMqExchangeConfig {
 
     @Bean
     Queue topicQueue2(RabbitAdmin rabbitAdmin) {
-        Queue queue = new Queue(RabbitMqEnum.QueueName.TOPICQUEUE2.getCode());
+        Queue queue = new Queue(RabbitMqEnum.QueueName.TOPICQUEUE2.getCode(), true, true, true);
         rabbitAdmin.declareQueue(queue);
         logger.debug("topic测试队列2实例化完成");
         return queue;
@@ -122,7 +128,7 @@ public class RabbitMqExchangeConfig {
      */
     @Bean
     TopicExchange topicExchange(RabbitAdmin rabbitAdmin) {
-        TopicExchange topicExchange = new TopicExchange(RabbitMqEnum.Exchange.CONTRACT_TOPIC.getCode());
+        TopicExchange topicExchange = new TopicExchange(RabbitMqEnum.Exchange.CONTRACT_TOPIC.getCode(), true, true);
         rabbitAdmin.declareExchange(topicExchange);
         logger.debug("完成主题型交换机bean实例化");
         return topicExchange;
