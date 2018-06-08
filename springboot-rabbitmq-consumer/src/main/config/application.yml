@@ -12,7 +12,4 @@ spring:
     virtual-host: /
     template:
       mandatory: true
-server:
-  port: 8090
-
 

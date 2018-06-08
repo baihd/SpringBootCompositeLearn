@@ -1,8 +1,8 @@
-package com.composite.receive;
+package com.composite.consumer;
 
 import com.composite.config.RabbitMqEnum;
 import com.composite.config.RabbitMqFactoryConfig;
-import com.composite.entity.TestUser;
+import com.composite.entity.User;
 import com.rabbitmq.client.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,34 +17,33 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.SerializationUtils;
 
-/**
- * 消费者配置
- */
 @Configuration
 @AutoConfigureAfter(RabbitMqFactoryConfig.class)
-public class Fanout2AmqpConfiguration {
+public class TopicExchangeMq2Consumer {
 
-    private static final Logger logger = LoggerFactory.getLogger(Fanout1AmqpConfiguration.class);
+    private static final Logger logger = LoggerFactory.getLogger(TopicExchangeMq2Consumer.class);
 
-    @Bean("fanoutQueue2Container")
+    @Bean("topicQueue2Container")
     public MessageListenerContainer messageListenerContainer(ConnectionFactory connectionFactory) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
-        container.setQueueNames(RabbitMqEnum.QueueName.FANOUTQUEUE2.getCode());
+        container.setQueueNames(RabbitMqEnum.QueueName.TOPICQUEUE2.getCode());
         container.setMessageListener(messageListener());
         container.setAcknowledgeMode(AcknowledgeMode.MANUAL);
         return container;
     }
 
-    @Bean("fanoutQueue2Listener")
+
+    @Bean("topicQueue2Listener")
     public ChannelAwareMessageListener messageListener() {
         return new ChannelAwareMessageListener() {
             @Override
             public void onMessage(Message message, Channel channel) throws Exception {
-                TestUser testUser = (TestUser) SerializationUtils.deserialize(message.getBody());
-                logger.info("FANOUTQUEUE2：" + testUser.toString());
+                User user = (User) SerializationUtils.deserialize(message.getBody());
+                logger.info("TOPICQUEUE2：" + user.toString());
                 channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
             }
         };
     }
+
 }

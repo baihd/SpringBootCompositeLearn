@@ -2,7 +2,7 @@ package com.composite.entity;
 
 import java.io.Serializable;
 
-public class TestUser implements Serializable {
+public class User implements Serializable {
 
     private String username;
 
@@ -27,7 +27,7 @@ public class TestUser implements Serializable {
 
     @Override
     public String toString() {
-        return "TestUser{" +
+        return "User{" +
                 "username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';

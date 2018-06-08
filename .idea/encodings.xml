@@ -13,10 +13,10 @@
     <file url="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis-transaction" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-restdocs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-shiro" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-shiro-more" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-springsecurity" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-swagger2" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

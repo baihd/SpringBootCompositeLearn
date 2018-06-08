@@ -1,8 +1,8 @@
-package com.composite.receive;
+package com.composite.consumer;
 
 import com.composite.config.RabbitMqEnum;
 import com.composite.config.RabbitMqFactoryConfig;
-import com.composite.entity.TestUser;
+import com.composite.entity.User;
 import com.rabbitmq.client.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,48 +22,55 @@ import org.springframework.util.SerializationUtils;
  */
 @Configuration
 @AutoConfigureAfter(RabbitMqFactoryConfig.class)
-public class DirectAmqpConfiguration {
+public class DirectExchangeMq1Consumer {
 
-    private static final Logger logger = LoggerFactory.getLogger(DirectAmqpConfiguration.class);
+    private static final Logger logger = LoggerFactory.getLogger(DirectExchangeMq1Consumer.class);
+    //最大消费者数量
+    public static final int DEFAULT_MAX_CONCURRENT = 50;
+    //消费者数量
+    public static final int DEFAULT_CONCURRENT = 10;
+    //每个消费者获取最大投递数量
+    public static final int DEFAULT_PREFETCH_COUNT = 50;
 
     /**
      * NONE 自动回调，即使无响应或者发生异常均会通知队列消费成功，会丢失数据。
      * AUTO 自动检测异常或者超时事件，如果发生则返回noack，消息自动回到队尾，但是这种方式可能出现消息体本身有问题，返回队尾其他队列也不能消费，造成队列阻塞。
      * MANUAL 手动回调，在程序中我们可以对消息异常记性捕获，如果出现消息体格式错误问题，手动回复ack，接着再次调用发送接口把消息推到队尾。
      */
-    @Bean("directQueueContainer")
+    @Bean("MessageListenerContainer1")
     public MessageListenerContainer messageListenerContainer(ConnectionFactory connectionFactory) {
         SimpleMessageListenerContainer container = new SimpleMessageListenerContainer();
         container.setConnectionFactory(connectionFactory);
         container.setQueueNames(RabbitMqEnum.QueueName.DIRECTQUEUE.getCode());
-        container.setMessageListener(messageListener());
+        container.setMaxConcurrentConsumers(DEFAULT_MAX_CONCURRENT);
+        container.setConcurrentConsumers(DEFAULT_CONCURRENT);
         container.setAcknowledgeMode(AcknowledgeMode.MANUAL);
+        container.setPrefetchCount(DEFAULT_PREFETCH_COUNT);
+        container.setMessageListener(messageListener());
         return container;
     }
 
-    @Bean("directQueueListener")
     public ChannelAwareMessageListener messageListener() {
         return new ChannelAwareMessageListener() {
             @Override
             public void onMessage(Message message, Channel channel) throws Exception {
-                TestUser testUser = (TestUser) SerializationUtils.deserialize(message.getBody());
-                //通过设置TestUser的name来测试回调，分别发两条消息，一条UserName为1，一条为2，查看控制台中队列中消息是否被消费
-                if ("1".equals(testUser.getUsername())) {
-                    logger.info(testUser.toString());
-                    System.out.println(testUser.toString());
-                    //否认
-                    //deliveryTag:该消息的index。
-                    // multiple：是否批量.true:将一次性拒绝所有小于deliveryTag的消息。
-                    // requeue：被拒绝的是否重新入队列。
-                    channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+                User user = (User) SerializationUtils.deserialize(message.getBody());
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    logger.error(e.getMessage());
                 }
-                if ("2".equals(testUser.getUsername())) {
-                    logger.info(testUser.toString());
-                    //确认
-                    //deliveryTag:该消息的index。
-                    //requeue：被拒绝的是否重新入队列。
-                    channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
-                }
+                logger.info("directQueue1:" + user.getPassword());
+                channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
+                //否认
+                //deliveryTag:该消息的index。
+                //multiple：是否批量.true:将一次性拒绝所有小于deliveryTag的消息。
+                //requeue：被拒绝的是否重新入队列。
+                //channel.basicNack(message.getMessageProperties().getDeliveryTag(), false, true);
+                //确认
+                //deliveryTag:该消息的index。
+                //requeue：被拒绝的是否重新入队列。
+                //channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
             }
         };
     }
