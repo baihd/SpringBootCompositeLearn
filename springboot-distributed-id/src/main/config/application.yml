@@ -1,0 +1,6 @@
+#唯一编号生成器
+snowflakeIdWorker:
+  workerId: 0
+  datacenterId: 1
+server:
+  port: 8050

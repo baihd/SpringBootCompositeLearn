@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "snowflake-id-worker.worker-id",
+      "type": "java.lang.Long",
+      "description": "工作机器ID(0~31)"
+    },
+    {
+      "name": "snowflake-id-worker.datacenter-id",
+      "type": "java.lang.Long",
+      "description": "数据中心ID(0~31)"
+    }
+  ]
+}

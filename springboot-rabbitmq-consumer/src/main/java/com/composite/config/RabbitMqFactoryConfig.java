@@ -53,6 +53,7 @@ public class RabbitMqFactoryConfig {
      * AmqpTemplate它定义包含了发送和接收消息等的一些基本的操作功能。
      * RabbitTemplate是AmqpTemplate的一个实现。
      * RabbitTemplate支持消息的确认与返回，为了返回消息，RabbitTemplate需要设置mandatory属性为true,
+     * mandatory为true时，如果exchange根据自身类型和消息routeKey无法找到一个符合条件的queue，那么会调用basic.return方法将消息返回给生产者
      * 并且CachingConnectionFactory的publisherReturns属性也需要设置为true。
      * 返回的消息会根据它注册的RabbitTemplate.ReturnCallback setReturnCallback回调发送到给客户端，一个RabbitTemplate仅能支持一个ReturnCallback。
      * SCOPE_PROTOTYPE每次注入的时候回自动创建一个新的bean实例
@@ -72,9 +73,6 @@ public class RabbitMqFactoryConfig {
     public RabbitAdmin rabbitAdmin(ConnectionFactory connectionFactory) {
         return new RabbitAdmin(connectionFactory);
     }
-
-
-
 
 
 }

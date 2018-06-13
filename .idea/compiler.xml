@@ -10,6 +10,8 @@
         <module name="springboot-asynchronous" />
         <module name="springboot-beatlsql" />
         <module name="springboot-cache" />
+        <module name="springboot-distributed-id" />
+        <module name="springboot-distributed-id-more" />
         <module name="springboot-jms" />
         <module name="springboot-jpa" />
         <module name="springboot-mongodb" />
@@ -35,6 +37,8 @@
       <module name="springboot-asynchronous" target="1.7" />
       <module name="springboot-beatlsql" target="1.7" />
       <module name="springboot-cache" target="1.7" />
+      <module name="springboot-distributed-id" target="1.7" />
+      <module name="springboot-distributed-id-more" target="1.7" />
       <module name="springboot-elk" target="10" />
       <module name="springboot-jms" target="1.7" />
       <module name="springboot-jpa" target="1.7" />
