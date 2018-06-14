@@ -20,8 +20,8 @@ public class CustomerController {
     @RequestMapping(value = "save")
     public void save() {
         List<Customer> customers = new ArrayList<>();
-        customers.add(new Customer("Alice", "Smith"));
-        customers.add(new Customer("Bob", "Smith"));
+        Customer customer = new Customer("san", "zhang");
+        customers.add(customer);
         repository.save(customers);
     }
 
