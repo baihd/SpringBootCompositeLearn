@@ -7,7 +7,6 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" filepath="$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-cache/springboot-cache.iml" filepath="$PROJECT_DIR$/springboot-cache/springboot-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-distributed-id/springboot-distributed-id.iml" filepath="$PROJECT_DIR$/springboot-distributed-id/springboot-distributed-id.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springboot-distributed-id-more/springboot-distributed-id-more.iml" filepath="$PROJECT_DIR$/springboot-distributed-id-more/springboot-distributed-id-more.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-elk/springboot-elk.iml" filepath="$PROJECT_DIR$/springboot-elk/springboot-elk.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-jms/springboot-jms.iml" filepath="$PROJECT_DIR$/springboot-jms/springboot-jms.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-jpa/springboot-jpa.iml" filepath="$PROJECT_DIR$/springboot-jpa/springboot-jpa.iml" />
@@ -17,10 +16,12 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq/springboot-rabbitmq.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq/springboot-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-consumer/springboot-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-consumer/springboot-rabbitmq-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis-id/springboot-redis-id.iml" filepath="$PROJECT_DIR$/springboot-redis-id/springboot-redis-id.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-restdocs/springboot-restdocs.iml" filepath="$PROJECT_DIR$/springboot-restdocs/springboot-restdocs.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" filepath="$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-springsecurity/springboot-springsecurity.iml" filepath="$PROJECT_DIR$/springboot-springsecurity/springboot-springsecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" filepath="$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-zookeeper-id/springboot-zookeeper-id.iml" filepath="$PROJECT_DIR$/springboot-zookeeper-id/springboot-zookeeper-id.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootcomposite.iml" filepath="$PROJECT_DIR$/springbootcomposite.iml" />
     </modules>
   </component>

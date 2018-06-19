@@ -24,7 +24,8 @@
         <option value="$PROJECT_DIR$/springboot-rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-rabbitmq-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-distributed-id/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-distributed-id-more/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis-id/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-zookeeper-id/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
