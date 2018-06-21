@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d137b087-464d-4a2b-a415-f38d43c71682" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_log4j_1_3_8_RELEASE.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springbootcomposite.iml" afterPath="$PROJECT_DIR$/springbootcomposite.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/service/impl/UserServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java" afterPath="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -77,31 +71,88 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JwtAuthorizeFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/filter/JwtAuthorizeFilter.java">
+      <file leaf-file-name="Md5SaltUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/utils/Md5SaltUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="786">
-              <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="29" />
+            <state relative-caret-position="-504">
+              <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JwtConfig.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/config/JwtConfig.java">
+      <file leaf-file-name="BCryptUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="594">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JwtTokenUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/JwtTokenUtil.java">
+      <file leaf-file-name="SecurityJwtApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/SecurityJwtApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="40" column="89" lean-forward="true" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
+            <state relative-caret-position="90">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ShaUtil.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/ShaUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="33">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springboot-security-jwt/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="252">
+                <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="54" column="42" lean-forward="false" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MD5Util.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/MD5Util.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JwtProperty.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/JwtProperty.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -121,7 +172,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>zkclient</find>
       <find>sessionTimeout</find>
       <find>checkRunning</find>
       <find>generateId</find>
@@ -151,6 +201,7 @@
       <find>password does not match stored value</find>
       <find>DaoAuthenticationProvider</find>
       <find>parseJWT</find>
+      <find>BCryptUtil</find>
     </findStrings>
     <replaceStrings>
       <replace>com.composite.entity.Permission</replace>
@@ -167,10 +218,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springboot-redis-lua/pom.xml" />
-        <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/springbootjwt/JwtApplication.java" />
-        <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/utils/jwt/JwtHelper.java" />
-        <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/LoginParam.java" />
         <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/AccessToken.java" />
         <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/JwtPatternUrl.java" />
         <option value="$PROJECT_DIR$/springboot-jwt/src/main/config/jwt.properties" />
@@ -183,7 +230,6 @@
         <option value="$PROJECT_DIR$/springboot-jwt/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/JwtProperty.java" />
         <option value="$PROJECT_DIR$/springboot-jwt/src/main/config/application.properties" />
-        <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/springbootsecurityjwt/SpringbootSecurityJwtApplication.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/SecurityJwtApplication.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -205,12 +251,10 @@
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/entity/IRole.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/security/JwtUser.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/entity/IUser.java" />
-        <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/dao/IUserRepository.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/resources/mapper/IUserRepositoryMapper.xml" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/controller/UserController.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/security/JwtTokenUtil.java" />
-        <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/security/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/config/EntryPointUnauthorizedHandler.java" />
@@ -218,6 +262,13 @@
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/security/JwtUserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/JwtTokenUtil.java" />
         <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/config/JwtConfig.java" />
+        <option value="$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java" />
+        <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/MD5Util.java" />
+        <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/ShaUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/ScryptUtil.java" />
+        <option value="$PROJECT_DIR$/springboot-security-jwt/README.md" />
       </list>
     </option>
   </component>
@@ -432,95 +483,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="security" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="composite" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springbootcomposite" type="462c0819:PsiDirectoryNode" />
-              <item name="springboot-security-jwt" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="springbootcomposite" type="b2602c69:ProjectViewProjectNode" />
@@ -805,16 +768,43 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SecurityJwtApplication">
-    <configuration name="JwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ShaUtil">
+    <configuration name="BCryptUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.composite.*" />
+          <option name="PATTERN" value="com.composite.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.JwtApplication" />
-      <module name="springboot-jwt" />
+      <option name="MAIN_CLASS_NAME" value="com.composite.utils.BCryptUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="springboot-security-jwt" />
+      <envs />
+    </configuration>
+    <configuration name="MD5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.composite.utils.MD5Util" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="springboot-security-jwt" />
       <envs />
     </configuration>
     <configuration name="SecurityJwtApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -828,21 +818,29 @@
       <module name="springboot-security-jwt" />
       <envs />
     </configuration>
+    <configuration name="ShaUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.composite.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.composite.utils.ShaUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="springboot-security-jwt" />
+      <envs />
+    </configuration>
     <configuration name="SpringBootRestdocsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootRestdocsApplication" />
       <module name="springboot-restdocs" />
-      <envs />
-    </configuration>
-    <configuration name="SpringBootShiroApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.SpringBootShiroApplication" />
-      <module name="springboot-shiro" />
       <envs />
     </configuration>
     <configuration name="SpringBootSpringSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -879,31 +877,6 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.composite.springbootzookeeperid.ZookeeperIdApplication" />
       <module name="springboot-zookeeper-id" />
       <envs />
-    </configuration>
-    <configuration name="ZookeeperIdGenerateTest.testGenerateZookeeperId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.composite.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="springboot-zookeeper-id" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.composite" />
-      <option name="MAIN_CLASS_NAME" value="com.composite.ZookeeperIdGenerateTest" />
-      <option name="METHOD_NAME" value="testGenerateZookeeperId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
@@ -1002,20 +975,20 @@
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringBootRestdocsApplication" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringbootRedisIdApplication" />
       <item index="3" class="java.lang.String" itemvalue="Spring Boot.SpringbootZookeeperIdApplication" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ZookeeperIdGenerateTest.testGenerateZookeeperId" />
-      <item index="5" class="java.lang.String" itemvalue="Spring Boot.JwtApplication" />
-      <item index="6" class="java.lang.String" itemvalue="Spring Boot.SpringbootSecurityJwtApplication" />
-      <item index="7" class="java.lang.String" itemvalue="Spring Boot.SecurityJwtApplication" />
-      <item index="8" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
-      <item index="9" class="java.lang.String" itemvalue="Spring Boot.SpringBootShiroApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.SpringbootSecurityJwtApplication" />
+      <item index="5" class="java.lang.String" itemvalue="Spring Boot.SecurityJwtApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
+      <item index="7" class="java.lang.String" itemvalue="Application.MD5Util" />
+      <item index="8" class="java.lang.String" itemvalue="Application.BCryptUtil" />
+      <item index="9" class="java.lang.String" itemvalue="Application.ShaUtil" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Spring Boot.SecurityJwtApplication" />
-        <item index="1" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
-        <item index="2" class="java.lang.String" itemvalue="Spring Boot.SpringBootShiroApplication" />
-        <item index="3" class="java.lang.String" itemvalue="Spring Boot.JwtApplication" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ZookeeperIdGenerateTest.testGenerateZookeeperId" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ShaUtil" />
+        <item index="1" class="java.lang.String" itemvalue="Application.BCryptUtil" />
+        <item index="2" class="java.lang.String" itemvalue="Application.MD5Util" />
+        <item index="3" class="java.lang.String" itemvalue="Spring Boot.SecurityJwtApplication" />
+        <item index="4" class="java.lang.String" itemvalue="Spring Boot.SpringBootSpringSecurityApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -1056,7 +1029,7 @@
       <workItem from="1528858216369" duration="575000" />
       <workItem from="1528969433370" duration="61000" />
       <workItem from="1529373543301" duration="9059000" />
-      <workItem from="1529392565826" duration="42585000" />
+      <workItem from="1529392565826" duration="48302000" />
     </task>
     <servers />
   </component>
@@ -1093,7 +1066,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="496151000" />
+    <option name="totallyTimeSpent" value="501868000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -1117,7 +1090,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36354056" sideWeight="0.50360113" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1966759" sideWeight="0.48016417" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2402529" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3930453" sideWeight="0.4963989" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3930453" sideWeight="0.4963989" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19599578" sideWeight="0.4973369" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1125,13 +1098,13 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1734072" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35932562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35932562" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42571127" sideWeight="0.4973369" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28556374" sideWeight="0.4973369" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1684,25 +1657,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java</url>
-          <line>48</line>
+          <line>29</line>
           <properties />
           <option name="timeStamp" value="557" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java</url>
-          <line>51</line>
+          <line>32</line>
           <properties />
           <option name="timeStamp" value="559" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java</url>
-          <line>53</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="560" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java</url>
-          <line>78</line>
+          <line>59</line>
           <properties />
           <option name="timeStamp" value="561" />
         </line-breakpoint>
@@ -1714,7 +1687,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java</url>
-          <line>59</line>
+          <line>40</line>
           <properties />
           <option name="timeStamp" value="563" />
         </line-breakpoint>
@@ -1946,44 +1919,60 @@
           <properties />
           <option name="timeStamp" value="623" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/MD5Util.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="626" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/MD5Util.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="628" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/MD5Util.java</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="630" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/MD5Util.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="631" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="632" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="633" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="634" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/ShaUtil.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="635" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="624" />
+      <option name="time" value="636" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/Msg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysRole.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/entity/SysUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/service/CustomUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-springsecurity/src/main/java/com/composite/config/WebMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2071,22 +2060,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/SecurityJwtApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/entity/IUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="370">
@@ -2157,16 +2130,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
           <caret line="32" column="35" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2275,6 +2238,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/LoginParam.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/ResultStatusCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/JwtTokenUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="40" column="89" lean-forward="true" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/filter/JwtAuthorizeFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="786">
+          <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/config/JwtConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-720">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/AccessToken.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/JsonResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -2299,54 +2328,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/LoginParam.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/ResultStatusCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/AccessToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/entity/Account.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/controller/AccountController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-630">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/utils/Md5SaltUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/utils/jwt/JwtHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -2355,27 +2336,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/JwtTokenUtil.java">
+    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/utils/Md5SaltUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="40" column="89" lean-forward="true" selection-start-line="40" selection-start-column="89" selection-end-line="40" selection-end-column="89" />
+        <state relative-caret-position="-504">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/filter/JwtAuthorizeFilter.java">
+    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="786">
-          <caret line="74" column="29" lean-forward="false" selection-start-line="74" selection-start-column="23" selection-end-line="74" selection-end-column="29" />
+        <state relative-caret-position="192">
+          <caret line="54" column="42" lean-forward="false" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/SecurityJwtApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-jwt/src/main/java/com/composite/config/JwtConfig.java">
+    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/BCryptUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="20" column="8" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="594">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/ScryptUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="74" lean-forward="true" selection-start-line="9" selection-start-column="74" selection-end-line="9" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/src/main/java/com/composite/utils/ShaUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-security-jwt/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="252">
+            <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

@@ -52,7 +52,7 @@ public class UserServiceImpl implements IUserService {
             return "用户已存在";
         }
         String rawPassword = user.getPassword();
-        user.setPassword(BCryptUtil.getEncryptValue(rawPassword));
+        user.setPassword(BCryptUtil.encode(rawPassword));
         List<IRole> roles = new ArrayList<>();
         IRole role = new IRole();
         role.setName("ROLE_USER");
