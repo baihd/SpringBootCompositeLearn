@@ -10,6 +10,7 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-elk/springboot-elk.iml" filepath="$PROJECT_DIR$/springboot-elk/springboot-elk.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-jms/springboot-jms.iml" filepath="$PROJECT_DIR$/springboot-jms/springboot-jms.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-jpa/springboot-jpa.iml" filepath="$PROJECT_DIR$/springboot-jpa/springboot-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-jwt/springboot-jwt.iml" filepath="$PROJECT_DIR$/springboot-jwt/springboot-jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" filepath="$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/springboot-mybatis-multiple-datasource.iml" filepath="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/springboot-mybatis-multiple-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" filepath="$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" />
@@ -17,7 +18,9 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-consumer/springboot-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-consumer/springboot-rabbitmq-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-redis-id/springboot-redis-id.iml" filepath="$PROJECT_DIR$/springboot-redis-id/springboot-redis-id.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-redis-lua/springboot-redis-lua.iml" filepath="$PROJECT_DIR$/springboot-redis-lua/springboot-redis-lua.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-restdocs/springboot-restdocs.iml" filepath="$PROJECT_DIR$/springboot-restdocs/springboot-restdocs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-security-jwt/springboot-security-jwt.iml" filepath="$PROJECT_DIR$/springboot-security-jwt/springboot-security-jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" filepath="$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-springsecurity/springboot-springsecurity.iml" filepath="$PROJECT_DIR$/springboot-springsecurity/springboot-springsecurity.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" filepath="$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" />

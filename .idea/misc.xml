@@ -26,6 +26,9 @@
         <option value="$PROJECT_DIR$/springboot-distributed-id/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-redis-id/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-zookeeper-id/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-redis-lua/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-security-jwt/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
@@ -35,7 +38,7 @@
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="false" project-jdk-name="1.7" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

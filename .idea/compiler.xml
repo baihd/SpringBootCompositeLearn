@@ -13,6 +13,7 @@
         <module name="springboot-elk" />
         <module name="springboot-jms" />
         <module name="springboot-jpa" />
+        <module name="springboot-jwt" />
         <module name="springboot-mongodb" />
         <module name="springboot-mybatis-multiple-datasource" />
         <module name="springboot-mybatis-transaction" />
@@ -20,7 +21,9 @@
         <module name="springboot-rabbitmq-consumer" />
         <module name="springboot-redis" />
         <module name="springboot-redis-id" />
+        <module name="springboot-redis-lua" />
         <module name="springboot-restdocs" />
+        <module name="springboot-security-jwt" />
         <module name="springboot-shiro" />
         <module name="springboot-springsecurity" />
         <module name="springboot-swagger2" />
@@ -34,27 +37,30 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-config" target="1.7" />
-      <module name="springboot-asynchronous" target="1.7" />
-      <module name="springboot-beatlsql" target="1.7" />
-      <module name="springboot-cache" target="1.7" />
-      <module name="springboot-distributed-id" target="1.7" />
-      <module name="springboot-elk" target="1.7" />
-      <module name="springboot-jms" target="1.7" />
-      <module name="springboot-jpa" target="1.7" />
-      <module name="springboot-mongodb" target="1.7" />
-      <module name="springboot-mybatis-multiple-datasource" target="1.7" />
-      <module name="springboot-mybatis-transaction" target="1.7" />
-      <module name="springboot-rabbitmq" target="1.7" />
-      <module name="springboot-rabbitmq-consumer" target="1.7" />
-      <module name="springboot-redis" target="1.7" />
-      <module name="springboot-redis-id" target="1.7" />
-      <module name="springboot-restdocs" target="1.7" />
-      <module name="springboot-shiro" target="1.7" />
-      <module name="springboot-springsecurity" target="1.7" />
-      <module name="springboot-swagger2" target="1.7" />
-      <module name="springboot-zookeeper-id" target="1.7" />
-      <module name="springbootcomposite" target="1.7" />
+      <module name="spring-config" target="1.8" />
+      <module name="springboot-asynchronous" target="1.8" />
+      <module name="springboot-beatlsql" target="1.8" />
+      <module name="springboot-cache" target="1.8" />
+      <module name="springboot-distributed-id" target="1.8" />
+      <module name="springboot-elk" target="1.8" />
+      <module name="springboot-jms" target="1.8" />
+      <module name="springboot-jpa" target="1.8" />
+      <module name="springboot-jwt" target="1.8" />
+      <module name="springboot-mongodb" target="1.8" />
+      <module name="springboot-mybatis-multiple-datasource" target="1.8" />
+      <module name="springboot-mybatis-transaction" target="1.8" />
+      <module name="springboot-rabbitmq" target="1.8" />
+      <module name="springboot-rabbitmq-consumer" target="1.8" />
+      <module name="springboot-redis" target="1.8" />
+      <module name="springboot-redis-id" target="1.8" />
+      <module name="springboot-redis-lua" target="1.8" />
+      <module name="springboot-restdocs" target="1.8" />
+      <module name="springboot-security-jwt" target="1.8" />
+      <module name="springboot-shiro" target="1.8" />
+      <module name="springboot-springsecurity" target="1.8" />
+      <module name="springboot-swagger2" target="1.8" />
+      <module name="springboot-zookeeper-id" target="1.8" />
+      <module name="springbootcomposite" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
