@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" filepath="$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-cache/springboot-cache.iml" filepath="$PROJECT_DIR$/springboot-cache/springboot-cache.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-distributed-id/springboot-distributed-id.iml" filepath="$PROJECT_DIR$/springboot-distributed-id/springboot-distributed-id.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-ehcache/springboot-ehcache.iml" filepath="$PROJECT_DIR$/springboot-ehcache/springboot-ehcache.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-elk/springboot-elk.iml" filepath="$PROJECT_DIR$/springboot-elk/springboot-elk.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-guavacache/springboot-guavacache.iml" filepath="$PROJECT_DIR$/springboot-guavacache/springboot-guavacache.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-jms/springboot-jms.iml" filepath="$PROJECT_DIR$/springboot-jms/springboot-jms.iml" />
