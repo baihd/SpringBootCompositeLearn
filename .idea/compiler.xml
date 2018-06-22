@@ -11,6 +11,7 @@
         <module name="springboot-cache" />
         <module name="springboot-distributed-id" />
         <module name="springboot-elk" />
+        <module name="springboot-guavacache" />
         <module name="springboot-jms" />
         <module name="springboot-jpa" />
         <module name="springboot-jwt" />
@@ -43,6 +44,7 @@
       <module name="springboot-cache" target="1.8" />
       <module name="springboot-distributed-id" target="1.8" />
       <module name="springboot-elk" target="1.8" />
+      <module name="springboot-guavacache" target="1.8" />
       <module name="springboot-jms" target="1.8" />
       <module name="springboot-jpa" target="1.8" />
       <module name="springboot-jwt" target="1.8" />

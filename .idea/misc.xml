@@ -29,6 +29,7 @@
         <option value="$PROJECT_DIR$/springboot-redis-lua/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-jwt/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-security-jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-guavacache/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
