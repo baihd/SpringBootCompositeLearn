@@ -33,6 +33,8 @@
         <option value="$PROJECT_DIR$/springboot-ehcache/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-javabase/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
