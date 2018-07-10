@@ -14,12 +14,16 @@
 #常用命令列举  
 ##应用管理
 
-rabbitmqctl status //显示RabbitMQ中间件的所有信息  
-rabbitmqctl stop //停止RabbitMQ应用，关闭节点  
-rabbitmqctl stop_app //停止RabbitMQ应用  
-rabbitmqctl start_app //启动RabbitMQ应用  
-rabbitmqctl restart //重置RabbitMQ节点  
-rabbitmqctl force_restart //强制重置RabbitMQ节点  
+sudo rabbitmqctl status //显示RabbitMQ中间件的所有信息  
+sudo rabbitmqctl stop //停止RabbitMQ应用，关闭节点  
+sudo rabbitmqctl stop_app //停止RabbitMQ应用  
+sudo rabbitmqctl start_app //启动RabbitMQ应用  
+sudo rabbitmqctl restart //重置RabbitMQ节点  
+sudo rabbitmqctl force_restart //强制重置RabbitMQ节点
+sudo rabbitmqctl list_queues //查看所有队列信息
+sudo rabbitmqctl stop_app //关闭应用
+sudo rabbitmqctl reset //清除所有队列
+sudo rabbitmqctl start_app  //启动应用，和上述关闭命令配合使用，达到清空队列的目的
 
 ##用户管理
 rabbitmqctl add_user username password //添加用户  
@@ -53,9 +57,6 @@ rabbitmqctl list_user_permissions username //列出用户权限
 
 ##通配符模式（Topic Exchange）
 基本思想和路由模式一样，只不过路由键支持模糊匹配，符号“#”匹配一个或多个词，符号“*”匹配不多不少一个词
-
-
-
 
 
 

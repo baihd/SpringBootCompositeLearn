@@ -72,12 +72,19 @@ public class RabbitMqProducer implements RabbitTemplate.ConfirmCallback, RabbitT
         //logger.info("send: " + correlationData.getId());
         //1.exchange,queue都正确,confirm被回调, ack=true
         this.rabbitTemplate.convertAndSend(RabbitMqEnum.Exchange.CONTRACT_DIRECT.getCode(), routeKey, obj);
+        this.rabbitTemplate.convertSendAndReceive(RabbitMqEnum.Exchange.CONTRACT_DIRECT.getCode(), routeKey, obj);
         //2.exchange错误,queue 正确,confirm被回调, ack=false
         //this.rabbitTemplate.convertAndSend("NO", routeKey, obj);
         //3.exchange正确,queue错误,confirm被回调,ack=true;return被回调replyText:NO_ROUTE
         //this.rabbitTemplate.convertAndSend(RabbitMqEnum.Exchange.CONTRACT_DIRECT.getCode(), "NO", obj);
         //4.exchange错误,queue错误,confirm被回调,ack=false
         //this.rabbitTemplate.convertAndSend("NO","NO",obj);
+    }
+
+    public Object sendAndReceiveDirect(String routeKey, Object obj) {
+        CorrelationData correlationData = new CorrelationData(UUID.randomUUID().toString());
+        Object object = this.rabbitTemplate.convertSendAndReceive(RabbitMqEnum.Exchange.CONTRACT_DIRECT.getCode(), routeKey, obj);
+        return object;
     }
 
     public void sendTopic(String routeKey, Object obj) {

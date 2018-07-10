@@ -31,10 +31,13 @@
         <option value="$PROJECT_DIR$/springboot-security-jwt/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-guavacache/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-ehcache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-javabase/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-config/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/spring-config/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-shiro-more/pom.xml" />
         <option value="$PROJECT_DIR$/springbootthriftinterfacetest/pom.xml" />
       </set>

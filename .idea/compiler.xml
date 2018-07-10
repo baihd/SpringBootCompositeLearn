@@ -9,10 +9,12 @@
         <module name="springboot-asynchronous" />
         <module name="springboot-beatlsql" />
         <module name="springboot-cache" />
+        <module name="springboot-config" />
         <module name="springboot-distributed-id" />
         <module name="springboot-ehcache" />
         <module name="springboot-elk" />
         <module name="springboot-guavacache" />
+        <module name="springboot-javabase" />
         <module name="springboot-jms" />
         <module name="springboot-jpa" />
         <module name="springboot-jwt" />
@@ -31,22 +33,17 @@
         <module name="springboot-swagger2" />
         <module name="springboot-zookeeper-id" />
       </profile>
-      <profile name="Annotation profile for springboot-composite" enabled="true">
-        <sourceOutputDir name="../springboot-elk/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../springboot-elk/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-config" />
-      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-config" target="1.8" />
       <module name="springboot-asynchronous" target="1.8" />
       <module name="springboot-beatlsql" target="1.8" />
       <module name="springboot-cache" target="1.8" />
+      <module name="springboot-config" target="1.8" />
       <module name="springboot-distributed-id" target="1.8" />
       <module name="springboot-ehcache" target="1.8" />
       <module name="springboot-elk" target="1.8" />
       <module name="springboot-guavacache" target="1.8" />
+      <module name="springboot-javabase" target="1.8" />
       <module name="springboot-jms" target="1.8" />
       <module name="springboot-jpa" target="1.8" />
       <module name="springboot-jwt" target="1.8" />
@@ -55,6 +52,7 @@
       <module name="springboot-mybatis-transaction" target="1.8" />
       <module name="springboot-rabbitmq" target="1.8" />
       <module name="springboot-rabbitmq-consumer" target="1.8" />
+      <module name="springboot-rabbitmq-mybatis" target="1.8" />
       <module name="springboot-redis" target="1.8" />
       <module name="springboot-redis-id" target="1.8" />
       <module name="springboot-redis-lua" target="1.8" />

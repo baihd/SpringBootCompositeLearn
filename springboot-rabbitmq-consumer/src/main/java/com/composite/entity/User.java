@@ -4,9 +4,19 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
+    private int id;
+
     private String username;
 
     private String password;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getUsername() {
         return username;
@@ -24,10 +34,12 @@ public class User implements Serializable {
         this.password = password;
     }
 
+
     @Override
     public String toString() {
         return "User{" +
-                "username='" + username + '\'' +
+                "id=" + id +
+                ", username='" + username + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }

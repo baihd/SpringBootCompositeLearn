@@ -2,14 +2,15 @@
 <project version="4">
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-asynchronous" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-beatlsql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-distributed-id" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-ehcache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-elk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-guavacache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-javabase" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jms" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jpa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-jwt" charset="UTF-8" />
@@ -18,6 +19,7 @@
     <file url="file://$PROJECT_DIR$/springboot-mybatis-transaction" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-rabbitmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-rabbitmq-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-rabbitmq-mybatis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis-id" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis-lua" charset="UTF-8" />

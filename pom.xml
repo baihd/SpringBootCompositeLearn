@@ -15,7 +15,6 @@
     <modules>
         <module>springboot-mybatis-transaction</module>
         <module>springboot-mybatis-multiple-datasource</module>
-        <module>spring-config</module>
         <module>springboot-jpa</module>
         <module>springboot-beatlsql</module>
         <module>springboot-swagger2</module>

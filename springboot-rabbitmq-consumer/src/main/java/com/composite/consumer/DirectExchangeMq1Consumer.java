@@ -3,6 +3,7 @@ package com.composite.consumer;
 import com.composite.config.RabbitMqEnum;
 import com.composite.config.RabbitMqFactoryConfig;
 import com.composite.entity.User;
+import com.rabbitmq.client.AMQP;
 import com.rabbitmq.client.Channel;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -55,12 +56,10 @@ public class DirectExchangeMq1Consumer {
             @Override
             public void onMessage(Message message, Channel channel) throws Exception {
                 User user = (User) SerializationUtils.deserialize(message.getBody());
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    logger.error(e.getMessage());
-                }
-                logger.info("directQueue1:" + user.getPassword());
+                byte[] bytes = SerializationUtils.serialize(user);
+                AMQP.BasicProperties replyProps = new AMQP.BasicProperties().builder().correlationId(message.getMessageProperties().getCorrelationIdString()).build();
+                channel.basicPublish("", message.getMessageProperties().getReplyTo(), replyProps, bytes);
+                // 手动应答
                 channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
                 //否认
                 //deliveryTag:该消息的index。
