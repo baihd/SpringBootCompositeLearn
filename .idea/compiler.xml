@@ -15,6 +15,7 @@
         <module name="springboot-dubbo-server" />
         <module name="springboot-ehcache" />
         <module name="springboot-elk" />
+        <module name="springboot-fastdfs" />
         <module name="springboot-guavacache" />
         <module name="springboot-javabase" />
         <module name="springboot-jms" />
@@ -46,6 +47,7 @@
       <module name="springboot-dubbo-server" target="1.6" />
       <module name="springboot-ehcache" target="1.8" />
       <module name="springboot-elk" target="1.8" />
+      <module name="springboot-fastdfs" target="1.8" />
       <module name="springboot-guavacache" target="1.8" />
       <module name="springboot-javabase" target="1.8" />
       <module name="springboot-jms" target="1.8" />
