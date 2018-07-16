@@ -9,7 +9,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class SpringbootElkApplicationTests {
+public class ElkApplicationTests {
 
     private Logger logger = Logger.getLogger(getClass());
 
