@@ -7,10 +7,10 @@
     <file url="file://$PROJECT_DIR$/springboot-cache" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-config" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-distributed-id" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-distributed-transaction" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-dubbo-client" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-dubbo-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-ehcache" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springboot-elk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-elk" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-fastdfs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-guavacache" charset="UTF-8" />

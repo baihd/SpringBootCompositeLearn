@@ -36,6 +36,7 @@
         <option value="$PROJECT_DIR$/springboot-dubbo-server/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-dubbo-client/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-fastdfs/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-distributed-transaction/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
