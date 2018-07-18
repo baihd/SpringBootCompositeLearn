@@ -116,3 +116,9 @@
 `sudo docker ps -a`
 ##6.显示容器日志
 `sudo docker logs container`
+##7.停止容器
+`sudo docker stop container`
+##8.删除容器
+`sudo docker rm container`
+##9.删除镜像
+`sudo docker rmi myImage`
