@@ -12,6 +12,7 @@
         <module name="springboot-config" />
         <module name="springboot-distributed-id" />
         <module name="springboot-distributed-transaction" />
+        <module name="springboot-docker" />
         <module name="springboot-dubbo-client" />
         <module name="springboot-dubbo-server" />
         <module name="springboot-ehcache" />
@@ -45,6 +46,7 @@
       <module name="springboot-config" target="1.8" />
       <module name="springboot-distributed-id" target="1.8" />
       <module name="springboot-distributed-transaction" target="1.8" />
+      <module name="springboot-docker" target="1.8" />
       <module name="springboot-dubbo-client" target="1.6" />
       <module name="springboot-dubbo-server" target="1.6" />
       <module name="springboot-ehcache" target="1.8" />
