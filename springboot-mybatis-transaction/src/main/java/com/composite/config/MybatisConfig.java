@@ -1,5 +1,6 @@
 package com.composite.config;
 
+import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -57,6 +58,8 @@ public class MybatisConfig implements TransactionManagementConfigurer {
         try {
             //每张表对应的xml文件
             sqlSessionFactoryBean.setMapperLocations(resolver.getResources("classpath:mapper/*.xml"));
+
+            sqlSessionFactoryBean.setPlugins(new Interceptor[]{new MybatisSqlInterceptor()});
             return sqlSessionFactoryBean.getObject();
         } catch (Exception e) {
             throw new RuntimeException(e);
