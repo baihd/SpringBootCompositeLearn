@@ -6,9 +6,7 @@
 ###删除多余副本
 `curl -XPUT "http://localhost:9200/_settings" -d'{"number_of_replicas" : 0}'`
 
-
-
-
+`curl -H "Content-Type: application/json" -XPUT "http://localhost:9200/_settings" -d'{"number_of_replicas" : 0}'`
 
 
 

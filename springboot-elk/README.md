@@ -95,7 +95,7 @@ kibana.index: ".kibana
 点击“Discover”选项卡，可以搜索和浏览elasticsearch中的数据，
 默认搜索最近15分钟的数据，也可以自定义。至此，ELK平台已经部署完成。*
 
-###4.配置logstash作为Indexer：
+###六.配置logstash作为Indexer：
 
 ####1.将logstash配置为索引器，并将logstash的日志数据存储到elasticsearch。
 *本案例是索引本地系统日志*
@@ -119,3 +119,70 @@ output {
   }
 }
 ```
+###七.安装elasticsearch5.X以上
+`sudo tar zxvf elasticsearch-6.3.1.tar.gz`
+####1.修改配置文件，允许远程访问： 
+`sudo vim elasticsearch-6.3.1/config/elasticsearch.yml` 
+####2.修改network 
+`network.host: 0.0.0.0` 
+
+###八.安装elasticsearch-head插件
+`sudo unzip node-v8.11.3-linux-x64.zip`
+####1.修改目录名称
+`sudo mv node-v8.11.3-linux-x64.zip node`
+####2.将node和npm设置为全局
+`sudo ln /opt/soft/node/bin/node /usr/local/bin/node`  
+`sudo ln /opt/soft/node/bin/npm /usr/local/bin/npm`
+####3.安装grunt和grunt-cli
+`sudo apt-get install -g grunt`   
+`sudo apt-get install -g grunt-cli`
+####4.解压elasticsearch-head
+`sudo unzip elasticsearch-head-master.zip`
+####5.安装head
+`cd elasticsearch-head`  
+`npm install`  
+####6.配置head
+#####1.修改app.js
+`vim elasticsearch-head/_site/app.js`  
+#####2.修改localhost为elasticsearch的ip
+`this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "http://localhost:9200";`
+#####3.修改Gruntfile.js
+```
+connect: {
+    server: {
+        options: {
+          hostname: "*",                                         
+          port: 9100,
+          base: '.',
+          keepalive: true
+        }   
+    }   
+}
+```
+####7.配置elasticsearch
+`vim elasticsearch.yml`
+#####增加以下两行
+`http.cors.enabled: true`  
+`http.cors.allow-origin: "*"`  
+####8.启动elasticsearch和head插件
+`cd /opt/soft/elasticsearch-6.3.1/bin/`  
+`./elasticsearch`  
+`cd /opt/soft/elasticsearch-head`  
+`npm start`
+####9.访问
+>http://127.0.0.1:9100
+
+###九.安装logstash-6.3.1
+`sudo tar zxvf logstash-6.3.1.tar.gz`  
+####1.启动：
+`./bin/logstash -f logstash-test.conf`
+
+###十.安装kibana-6.3.1-linux-x86_64
+`sudo tar zxvf kibana-6.3.1-linux-x86_64.tar.gz`
+####1.修改配置  
+`sudo vim /opt/soft/kibana-6.3.1-linux-x86_64/config/kibana.yml`
+`server.host: "10.0.16.150"`  
+`elasticsearch.url: "http://10.0.16.150:9200"`  
+####2.启动
+`cd kibana-6.3.1-linux-x86_64/bin`  
+`./kibana`
