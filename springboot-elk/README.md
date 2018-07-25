@@ -167,15 +167,29 @@ connect: {
 ####8.启动elasticsearch和head插件
 `cd /opt/soft/elasticsearch-6.3.1/bin/`  
 `./elasticsearch`  
+`./elasticsearch -d`  
 `cd /opt/soft/elasticsearch-head`  
-`npm start`
+`npm start`  
+`nohup npm start &`  
+`nohup grunt server &`
 ####9.访问
 >http://127.0.0.1:9100
+####10.停止elasticsearch
+`ps -ef|grep elastic`  
+`kill -9 端口号`
+####11.停止head
+`netstat -tunlp|grep 9100`  
+`kill -9 端口号`
 
 ###九.安装logstash-6.3.1
 `sudo tar zxvf logstash-6.3.1.tar.gz`  
 ####1.启动：
 `./bin/logstash -f logstash-test.conf`
+`nohup ./bin/logstash -f ./configs &`
+####2.停止
+`ps -ef |grep logstash`  
+`kill -9 端口号`
+
 
 ###十.安装kibana-6.3.1-linux-x86_64
 `sudo tar zxvf kibana-6.3.1-linux-x86_64.tar.gz`
@@ -185,4 +199,58 @@ connect: {
 `elasticsearch.url: "http://10.0.16.150:9200"`  
 ####2.启动
 `cd kibana-6.3.1-linux-x86_64/bin`  
-`./kibana`
+`./kibana`  
+`nohup ./bin/kibana &`  
+####3.停止
+`netstat -anltp|grep 5601`  
+`kill -9 端口号`
+
+###十一.安装filebeat-6.3.1-linux-x86_64
+`sudo tar zxvf filebeat-6.3.1-linux-x86_64.tar.gz`
+####1.修改配置  
+`sudo vim filebeat.yml`
+```
+filebeat.inputs:
+- type: log
+  #Change to true to enable this input configuration.
+  enabled: true
+  #Paths that should be crawled and fetched. Glob based paths.
+  paths:
+    - /opt/soft/logs/*.log
+    
+#output.elasticsearch:
+  # Array of hosts to connect to.
+  #hosts: ["localhost:9200"]
+    
+output.logstash:
+  # The Logstash hosts
+  hosts: ["localhost:5044"]
+```
+####2.启动
+`./filebeat -e -c filebeat.yml -d "publish"`  
+`nohup ./filebeat -e -c filebeat.yml >/dev/null 2>&1 &`
+####3.停止
+`ps -ef |grep filebeat`  
+`kill -9 端口号`
+
+###十二.filebeat在logstash中的配置
+```
+input {
+  beats{
+      port => "5044"
+      type => "logs"
+  }
+}
+filter{
+  mutate {
+    remove_field => ["host","[beat][hostname]","[beat][name]","count","fields","input_type","offset","type","beat","@version"]
+  }
+}
+output {
+  stdout { codec=> rubydebug }
+  elasticsearch {
+    hosts => "http://127.0.0.1:9200/"
+    index => "logstash-%{+YYYY.MM}"
+  }
+}
+```
