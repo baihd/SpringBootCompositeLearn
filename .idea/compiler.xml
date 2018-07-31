@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="handwriting-code" />
         <module name="springboot-asynchronous" />
         <module name="springboot-beatlsql" />
         <module name="springboot-cache" />
@@ -40,6 +41,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="handwriting-code" target="1.8" />
       <module name="springboot-asynchronous" target="1.8" />
       <module name="springboot-beatlsql" target="1.8" />
       <module name="springboot-cache" target="1.8" />

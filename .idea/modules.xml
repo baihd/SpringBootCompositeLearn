@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/handwriting-code/handwriting-code.iml" filepath="$PROJECT_DIR$/handwriting-code/handwriting-code.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-asynchronous/springboot-asynchronous.iml" filepath="$PROJECT_DIR$/springboot-asynchronous/springboot-asynchronous.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" filepath="$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-cache/springboot-cache.iml" filepath="$PROJECT_DIR$/springboot-cache/springboot-cache.iml" />
