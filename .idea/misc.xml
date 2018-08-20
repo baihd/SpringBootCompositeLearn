@@ -39,6 +39,11 @@
         <option value="$PROJECT_DIR$/springboot-distributed-transaction/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-docker/pom.xml" />
         <option value="$PROJECT_DIR$/handwriting-code/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-aop/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-async/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-cas-client/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-docker-compose/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-statemachine/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

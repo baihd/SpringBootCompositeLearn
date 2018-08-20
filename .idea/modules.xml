@@ -3,13 +3,17 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/handwriting-code/handwriting-code.iml" filepath="$PROJECT_DIR$/handwriting-code/handwriting-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-aop/springboot-aop.iml" filepath="$PROJECT_DIR$/springboot-aop/springboot-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-async/springboot-async.iml" filepath="$PROJECT_DIR$/springboot-async/springboot-async.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-asynchronous/springboot-asynchronous.iml" filepath="$PROJECT_DIR$/springboot-asynchronous/springboot-asynchronous.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" filepath="$PROJECT_DIR$/springboot-beatlsql/springboot-beatlsql.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-cache/springboot-cache.iml" filepath="$PROJECT_DIR$/springboot-cache/springboot-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-cas-client/springboot-cas-client.iml" filepath="$PROJECT_DIR$/springboot-cas-client/springboot-cas-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-config/springboot-config.iml" filepath="$PROJECT_DIR$/springboot-config/springboot-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-distributed-id/springboot-distributed-id.iml" filepath="$PROJECT_DIR$/springboot-distributed-id/springboot-distributed-id.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-distributed-transaction/springboot-distributed-transaction.iml" filepath="$PROJECT_DIR$/springboot-distributed-transaction/springboot-distributed-transaction.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-docker/springboot-docker.iml" filepath="$PROJECT_DIR$/springboot-docker/springboot-docker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-docker-compose/springboot-docker-compose.iml" filepath="$PROJECT_DIR$/springboot-docker-compose/springboot-docker-compose.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-client/springboot-dubbo-client.iml" filepath="$PROJECT_DIR$/springboot-dubbo-client/springboot-dubbo-client.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-dubbo-server/springboot-dubbo-server.iml" filepath="$PROJECT_DIR$/springboot-dubbo-server/springboot-dubbo-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-ehcache/springboot-ehcache.iml" filepath="$PROJECT_DIR$/springboot-ehcache/springboot-ehcache.iml" />
@@ -32,6 +36,7 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-security-jwt/springboot-security-jwt.iml" filepath="$PROJECT_DIR$/springboot-security-jwt/springboot-security-jwt.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" filepath="$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-springsecurity/springboot-springsecurity.iml" filepath="$PROJECT_DIR$/springboot-springsecurity/springboot-springsecurity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-statemachine/springboot-statemachine.iml" filepath="$PROJECT_DIR$/springboot-statemachine/springboot-statemachine.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" filepath="$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-zookeeper-id/springboot-zookeeper-id.iml" filepath="$PROJECT_DIR$/springboot-zookeeper-id/springboot-zookeeper-id.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootcomposite.iml" filepath="$PROJECT_DIR$/springbootcomposite.iml" />
