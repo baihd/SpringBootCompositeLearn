@@ -1,0 +1,44 @@
+#druid驱动配置信息
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test_cas?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+    #druid连接池的配置信息
+    initialSize: 5
+    minIdle: 5
+    maxActive: 20
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    filters: stat,wall,log4j
+    connectionProperties:
+      druid:
+        stat:
+          mergeSql: true
+          slowSqlMillis: 5000
+  
+  cas:
+    sign-out-filters: /logout
+    auth-filters: /*
+    validate-filters: /*
+    request-wrapper-filters: /*
+    assertion-filters: /*
+    cas-server-login-url: http://localhost:8080/cas/login
+    cas-server-url-prefix: http://localhost:8080/cas/
+    redirect-after-validation: true
+    use-session: true
+    server-name: http://localhost:8001
+server:
+  port: 8001
+
+
+
