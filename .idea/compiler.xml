@@ -43,6 +43,7 @@
         <module name="springboot-springsecurity" />
         <module name="springboot-statemachine" />
         <module name="springboot-swagger2" />
+        <module name="springboot-websocket" />
         <module name="springboot-zookeeper-id" />
       </profile>
     </annotationProcessing>
@@ -84,6 +85,7 @@
       <module name="springboot-springsecurity" target="1.8" />
       <module name="springboot-statemachine" target="1.8" />
       <module name="springboot-swagger2" target="1.8" />
+      <module name="springboot-websocket" target="1.8" />
       <module name="springboot-zookeeper-id" target="1.8" />
       <module name="springbootcomposite" target="1.8" />
     </bytecodeTargetLevel>

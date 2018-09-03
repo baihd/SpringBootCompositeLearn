@@ -44,6 +44,7 @@
         <option value="$PROJECT_DIR$/springboot-cas-client/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-docker-compose/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-statemachine/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-websocket/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
