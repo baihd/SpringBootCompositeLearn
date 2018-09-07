@@ -27,6 +27,9 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" filepath="$PROJECT_DIR$/springboot-mongodb/springboot-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource/springboot-mybatis-multiple-datasource.iml" filepath="$PROJECT_DIR$/springboot-mybatis-multiple-datasource/springboot-mybatis-multiple-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" filepath="$PROJECT_DIR$/springboot-mybatis-transaction/springboot-mybatis-transaction.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-oauth2-client/springboot-oauth2-client.iml" filepath="$PROJECT_DIR$/springboot-oauth2-client/springboot-oauth2-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-oauth2-client2/springboot-oauth2-client2.iml" filepath="$PROJECT_DIR$/springboot-oauth2-client2/springboot-oauth2-client2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-oauth2-server/springboot-oauth2-server.iml" filepath="$PROJECT_DIR$/springboot-oauth2-server/springboot-oauth2-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq/springboot-rabbitmq.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq/springboot-rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-rabbitmq-consumer/springboot-rabbitmq-consumer.iml" filepath="$PROJECT_DIR$/springboot-rabbitmq-consumer/springboot-rabbitmq-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-redis/springboot-redis.iml" filepath="$PROJECT_DIR$/springboot-redis/springboot-redis.iml" />

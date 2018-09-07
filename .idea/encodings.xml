@@ -3,6 +3,7 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/handwriting-code" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-client2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-aop" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-async" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-asynchronous" charset="UTF-8" />
@@ -27,6 +28,9 @@
     <file url="file://$PROJECT_DIR$/springboot-mongodb" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis-multiple-datasource" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis-transaction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-oauth2-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-oauth2-client2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-oauth2-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-rabbitmq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-rabbitmq-consumer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-redis" charset="UTF-8" />

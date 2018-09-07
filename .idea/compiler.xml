@@ -32,6 +32,9 @@
         <module name="springboot-mongodb" />
         <module name="springboot-mybatis-multiple-datasource" />
         <module name="springboot-mybatis-transaction" />
+        <module name="springboot-oauth2-client" />
+        <module name="springboot-oauth2-client2" />
+        <module name="springboot-oauth2-server" />
         <module name="springboot-rabbitmq" />
         <module name="springboot-rabbitmq-consumer" />
         <module name="springboot-redis" />
@@ -48,7 +51,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="handwriting-code" target="1.8" />
+      <module name="oauth2-client2" target="1.8" />
       <module name="springboot-aop" target="1.8" />
       <module name="springboot-async" target="1.8" />
       <module name="springboot-asynchronous" target="1.8" />
@@ -73,6 +78,9 @@
       <module name="springboot-mongodb" target="1.8" />
       <module name="springboot-mybatis-multiple-datasource" target="1.8" />
       <module name="springboot-mybatis-transaction" target="1.8" />
+      <module name="springboot-oauth2-client" target="1.8" />
+      <module name="springboot-oauth2-client2" target="1.8" />
+      <module name="springboot-oauth2-server" target="1.8" />
       <module name="springboot-rabbitmq" target="1.8" />
       <module name="springboot-rabbitmq-consumer" target="1.8" />
       <module name="springboot-rabbitmq-mybatis" target="1.8" />
