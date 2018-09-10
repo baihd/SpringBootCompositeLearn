@@ -1,8 +1,9 @@
 var redirect;
 redirect = {
-    urlHost: ["http://localhost:20000/auth"],
+    urlHost: ["http://localhost:8081/oauth2"],
     accessTokenData: {
         accessToken: [],
+        refreshToken:[],
         errorDescription: []
     },
     checkTokenData: {
@@ -16,7 +17,7 @@ redirect = {
         var that = this;
         that.accessToken();
         that.checkToken();
-
+        that.refreshToken();
     },
     accessToken: function () {
         var that = this;
@@ -44,6 +45,7 @@ redirect = {
                 success: function (data) {
                     if (!that.isEmpty(data)) {
                         that.accessTokenData.accessToken = data.access_token;
+                        that.accessTokenData.refreshToken = data.refresh_token;
                         that.accessTokenData.errorDescription = data.error_description;
                     } else {
                         console.log(data);
@@ -94,6 +96,47 @@ redirect = {
                     if (!that.isEmpty(data)) {
                         if (!that.isEmpty(data.responseJSON.error_description)) {
                             that.checkTokenData.errorDescription = data.responseJSON.error_description;
+                            console.log(data.responseJSON.error_description);
+                        } else {
+                            console.log(data);
+                        }
+                    }
+                }
+            });
+        });
+    },
+
+    refreshToken: function () {
+        var that = this;
+        $("#refreshToken").on("click", function () {
+            var data = {
+                // 'client-id': 'client',
+                // 'client-secret': 'secret',
+                'refreshtoken': that.accessTokenData.refreshToken,
+                'grant_type': 'refresh_token'
+            };
+            var requestUrl = that.urlHost + '/oauth/token';
+            $.ajax({
+                url: requestUrl,
+                data: data,
+                type: "POST",
+                dataType: "JSON",
+                contentType: "application/x-www-form-urlencoded",
+                headers: {
+                    'Authorization': 'Basic Y2xpZW50OnNlY3JldA==',
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                success: function (data) {
+                    if (!that.isEmpty(data)) {
+                        that.accessTokenData.accessToken = data.access_token;
+                    } else {
+                        console.log(data);
+                    }
+                },
+                error: function (data) {
+                    if (!that.isEmpty(data)) {
+                        if (!that.isEmpty(data.responseJSON.error_description)) {
+                            that.accessTokenData.errorDescription = data.responseJSON.error_description;
                             console.log(data.responseJSON.error_description);
                         } else {
                             console.log(data);
