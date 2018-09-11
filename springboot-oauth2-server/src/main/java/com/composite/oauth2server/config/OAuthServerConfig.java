@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -44,12 +45,10 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
         clients.inMemory()
                 .withClient("client")
                 .secret(passwordEncoder.encode("secret"))
-                .authorizedGrantTypes("authorization_code", "client_credentials", "refresh_token", "password", "implicit")
+                .authorizedGrantTypes("authorization_code")
                 .scopes("all")
                 .autoApprove(true)
-                .redirectUris("http://localhost:8082/ui/redirect")
-                .accessTokenValiditySeconds(120)
-                .refreshTokenValiditySeconds(60);
+                .redirectUris("http://localhost:8082/ui/redirect");
     }
 
     @Override
