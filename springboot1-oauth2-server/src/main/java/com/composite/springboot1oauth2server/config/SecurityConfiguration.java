@@ -9,6 +9,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.web.cors.CorsUtils;
 
 @Configuration
 @EnableWebSecurity
@@ -27,7 +28,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         http
                 .requestMatchers().anyRequest()
                 .and()
+                .cors()
+                .and()
+                .csrf().disable()
                 .authorizeRequests()
-                .antMatchers("/oauth/*").permitAll();
+                .antMatchers("/oauth/*").permitAll()
+                .requestMatchers(CorsUtils::isPreFlightRequest).permitAll();
     }
 }
