@@ -9,7 +9,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 
@@ -22,7 +22,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 
     @Bean
@@ -32,16 +32,34 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     }
 
     @Override
-    protected void configure(HttpSecurity http) throws Exception {
-        http
-                .authorizeRequests().antMatchers("/**/*.js", "/**/*.css").permitAll().anyRequest().authenticated()
-                .and().formLogin().loginPage("/login").permitAll()
-                .and().csrf().disable();
-    }
-
-    @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService);
     }
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http.csrf().disable();
+        http
+                .authorizeRequests()
+                //任何用户都可以访问以"/**/*.js","/signup", 或者 "/about"开头的URL。
+                .antMatchers("/**/*.js", "/**/*.css").permitAll()
+                //尚未匹配的任何URL都要求用户进行身份验证
+                .anyRequest().authenticated()
+                //指定登录页的路径
+                .and().formLogin().loginPage("/login")
+                //指定登录成功后跳转到/index页面
+                .defaultSuccessUrl("/index")
+                //指定登录失败后跳转到/login?error页面
+                .failureUrl("/login?error")
+                .permitAll()
+                .and()
+                .logout()
+                //指定登出的url
+                .logoutUrl("/logout")
+                //指定登出成功之后跳转的url
+                .logoutSuccessUrl("/login")
+                .permitAll();
+    }
+
 
 }

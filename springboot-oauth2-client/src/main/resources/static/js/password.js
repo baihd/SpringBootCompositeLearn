@@ -1,6 +1,6 @@
 var redirect;
 redirect = {
-    urlHost: ["http://localhost:8081/oauth2"],
+    urlHost: ["http://localhost:8060"],
     accessTokenData: {
         accessToken: [],
         refreshToken: [],
@@ -15,21 +15,20 @@ redirect = {
     },
     init: function () {
         var that = this;
-        that.accessToken();
+        that.passwordAccessToken();
         that.checkToken();
         that.refreshToken();
     },
-    accessToken: function () {
+    passwordAccessToken: function () {
         var that = this;
-        $("#accessToken").on("click", function () {
-            var code = that.getQueryVariable("code");
+        $("#passwordAccessToken").on("click", function () {
             var data = {
-                'client-id': 'client',
-                'client-secret': 'secret',
+                'username': 'admin',
+                'password': '123456',
+                'grant_type': 'password',
                 'scope': 'all',
-                'redirect_uri': 'http://localhost:8070/ui/redirect',
-                'code': code,
-                'grant_type': 'authorization_code'
+                'client-id': 'client1',
+                'client-secret': 'secret'
             };
             var requestUrl = that.urlHost + '/oauth/token';
             $.ajax({
@@ -57,7 +56,6 @@ redirect = {
                     if (!that.isEmpty(data)) {
                         if (!that.isEmpty(data.responseJSON.error_description)) {
                             that.accessTokenData.errorDescription = data.responseJSON.error_description;
-                            $("#showErrorMessage").html("showErrorMessage------:" + that.accessTokenData.errorDescription);
                             console.log(data.responseJSON.error_description);
                         } else {
                             console.log(data);
@@ -100,7 +98,6 @@ redirect = {
                     if (!that.isEmpty(data)) {
                         if (!that.isEmpty(data.responseJSON.error_description)) {
                             that.checkTokenData.errorDescription = data.responseJSON.error_description;
-                            $("#showErrorMessage").html("showErrorMessage------:" + that.accessTokenData.errorDescription);
                             console.log(data.responseJSON.error_description);
                         } else {
                             console.log(data);
@@ -115,7 +112,7 @@ redirect = {
         var that = this;
         $("#refreshToken").on("click", function () {
             var data = {
-                'client-id': 'client',
+                'client-id': 'client1',
                 'client-secret': 'secret',
                 'refresh_token': that.accessTokenData.refreshToken,
                 'grant_type': 'refresh_token'
@@ -125,6 +122,7 @@ redirect = {
                 url: requestUrl,
                 data: data,
                 type: "POST",
+                async: false,
                 dataType: "JSON",
                 contentType: "application/x-www-form-urlencoded",
                 headers: {
@@ -134,7 +132,7 @@ redirect = {
                 success: function (data) {
                     if (!that.isEmpty(data)) {
                         that.accessTokenData.accessToken = data.access_token;
-                        that.accessTokenData.refreshToken = data.refresh_token;
+                        that.accessTokenData.accessToken = data.refresh_token;
                         $("#showRefreshAccessToken").html("accessToken------:" + that.accessTokenData.accessToken);
                         $("#showRefreshRefreshToken").html("refreshToken------:" + that.accessTokenData.refreshToken);
                     } else {
@@ -144,7 +142,6 @@ redirect = {
                 error: function (data) {
                     if (!that.isEmpty(data)) {
                         if (!that.isEmpty(data.responseJSON.error_description)) {
-                            $("#showErrorMessage").html("showErrorMessage------:" + that.accessTokenData.errorDescription);
                             that.accessTokenData.errorDescription = data.responseJSON.error_description;
                             console.log(data.responseJSON.error_description);
                         } else {

@@ -4,21 +4,18 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="oauth2" content="">
     <title>认证服务器端登录页面</title>
-    <link href="/oauth2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/oauth2/css/signin.css" rel="stylesheet">
+    <link href="/oauth2/css/login.css" rel="stylesheet">
 </head>
 <body>
 <div class="container form-margin-top">
-    <form class="form-signin" action="/oauth2/login" method="post">
-        <h2 class="form-signin-heading" align="center">认证中心统一登录平台</h2>
-        <input type="text" name="username" class="form-control form-margin-top" placeholder="账号" required autofocus>
-        <input type="password" name="password" class="form-control" placeholder="密码" required>
+    <form class="form-login" action="/oauth2/login" method="post">
+        <h2 class="form-login-heading" align="center">认证中心统一登录平台</h2>
+        <input type="text" name="username" class="form-login-text" placeholder="账号" required autofocus>
+        <input type="password" name="password" class="form-login-text" placeholder="密码" required>
         <input type="checkbox" name="remember-me">自动登录
-        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+        <button class="form-login-button" type="submit">登录</button>
     </form>
 </div>
 </body>
