@@ -38,7 +38,7 @@ redirect = {
                 dataType: "JSON",
                 contentType: "application/x-www-form-urlencoded",
                 headers: {
-                    'Authorization': 'Basic Y2xpZW50OnNlY3JldA==',
+                    'Authorization': 'Basic Y2xpZW50MTpzZWNyZXQ=',
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 success: function (data) {
@@ -54,6 +54,7 @@ redirect = {
                 },
                 error: function (data) {
                     if (!that.isEmpty(data)) {
+                        $("#showErrorMessage").html("showErrorMessage------:" + that.accessTokenData.errorDescription);
                         if (!that.isEmpty(data.responseJSON.error_description)) {
                             that.accessTokenData.errorDescription = data.responseJSON.error_description;
                             console.log(data.responseJSON.error_description);
@@ -79,7 +80,7 @@ redirect = {
                 dataType: "JSON",
                 contentType: "application/x-www-form-urlencoded",
                 headers: {
-                    'Authorization': 'Basic Y2xpZW50OnNlY3JldA==',
+                    'Authorization': 'Basic Y2xpZW50MTpzZWNyZXQ=',
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 success: function (data) {
@@ -96,6 +97,7 @@ redirect = {
                 },
                 error: function (data) {
                     if (!that.isEmpty(data)) {
+                        $("#showErrorMessage").html("showErrorMessage------:" + that.accessTokenData.errorDescription);
                         if (!that.isEmpty(data.responseJSON.error_description)) {
                             that.checkTokenData.errorDescription = data.responseJSON.error_description;
                             console.log(data.responseJSON.error_description);
@@ -126,13 +128,13 @@ redirect = {
                 dataType: "JSON",
                 contentType: "application/x-www-form-urlencoded",
                 headers: {
-                    'Authorization': 'Basic Y2xpZW50OnNlY3JldA==',
+                    'Authorization': 'Basic Y2xpZW50MTpzZWNyZXQ=',
                     'Content-Type': 'application/x-www-form-urlencoded'
                 },
                 success: function (data) {
                     if (!that.isEmpty(data)) {
                         that.accessTokenData.accessToken = data.access_token;
-                        that.accessTokenData.accessToken = data.refresh_token;
+                        that.accessTokenData.refreshToken = data.refresh_token;
                         $("#showRefreshAccessToken").html("accessToken------:" + that.accessTokenData.accessToken);
                         $("#showRefreshRefreshToken").html("refreshToken------:" + that.accessTokenData.refreshToken);
                     } else {
@@ -141,6 +143,7 @@ redirect = {
                 },
                 error: function (data) {
                     if (!that.isEmpty(data)) {
+                        $("#showErrorMessage").html("showErrorMessage------:" + that.accessTokenData.errorDescription);
                         if (!that.isEmpty(data.responseJSON.error_description)) {
                             that.accessTokenData.errorDescription = data.responseJSON.error_description;
                             console.log(data.responseJSON.error_description);
