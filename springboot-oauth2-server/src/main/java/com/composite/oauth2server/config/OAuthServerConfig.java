@@ -13,9 +13,13 @@ import org.springframework.security.oauth2.config.annotation.web.configuration.A
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerEndpointsConfigurer;
 import org.springframework.security.oauth2.config.annotation.web.configurers.AuthorizationServerSecurityConfigurer;
+import org.springframework.security.oauth2.provider.ClientDetailsService;
+import org.springframework.security.oauth2.provider.client.JdbcClientDetailsService;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
 import org.springframework.security.oauth2.provider.token.store.redis.RedisTokenStore;
+
+import javax.sql.DataSource;
 
 @Configuration
 @EnableAuthorizationServer
@@ -34,6 +38,15 @@ public class OAuthServerConfig extends AuthorizationServerConfigurerAdapter {
     @Qualifier("IUserDetailsService")
     private UserDetailsService userDetailsService;
 
+    @Qualifier("dataSource")
+    @Autowired
+    private DataSource dataSource;
+
+    @Bean
+    public ClientDetailsService clientDetails() {
+        return new JdbcClientDetailsService(dataSource);
+    }
+
     @Override
     public void configure(final AuthorizationServerSecurityConfigurer oauthServer) throws Exception {
         oauthServer.tokenKeyAccess("permitAll()").checkTokenAccess("isAuthenticated()");
@@ -41,13 +54,14 @@ public class OAuthServerConfig extends AuthorizationServerConfigurerAdapter {
 
     @Override
     public void configure(final ClientDetailsServiceConfigurer clients) throws Exception {
-        clients.inMemory()
-                .withClient("client")
-                .secret(passwordEncoder.encode("secret"))
-                .authorizedGrantTypes("authorization_code","refresh_token")
-                .scopes("all")
-                .autoApprove(true)
-                .redirectUris("http://localhost:8070/ui/redirect");
+//        clients.inMemory()
+//                .withClient("client")
+//                .secret(passwordEncoder.encode("secret"))
+//                .authorizedGrantTypes("authorization_code", "refresh_token")
+//                .scopes("all")
+//                .autoApprove(true)
+//                .redirectUris("http://127.0.0.1:8070/ui/redirect");
+        clients.withClientDetails(clientDetails());
     }
 
     @Override
