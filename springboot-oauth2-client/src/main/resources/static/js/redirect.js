@@ -1,6 +1,6 @@
 var redirect;
 redirect = {
-    urlHost: ["http://localhost:8081/oauth2"],
+    urlHost: ["http://127.0.0.1:8081/oauth2"],
     accessTokenData: {
         accessToken: [],
         refreshToken: [],
@@ -27,7 +27,7 @@ redirect = {
                 'client-id': 'client',
                 'client-secret': 'secret',
                 'scope': 'all',
-                'redirect_uri': 'http://localhost:8070/ui/redirect',
+                'redirect_uri': 'http://127.0.0.1:8070/ui/redirect',
                 'code': code,
                 'grant_type': 'authorization_code'
             };

@@ -1,10 +1,10 @@
 var redirect;
 redirect = {
-    urlHost: ["http://localhost:8081/oauth2"],
+    urlHost: ["http://127.0.0.1:8081/oauth2"],
     redirectData: {
         clientId: 'client',
         scope: 'all',
-        redirectURI: 'http://localhost:8070/ui/redirect',
+        redirectURI: 'http://127.0.0.1:8070/ui/redirect',
         responseType: 'code'
     },
     init: function () {

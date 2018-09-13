@@ -1,6 +1,6 @@
 var redirect;
 redirect = {
-    urlHost: ["http://localhost:8060"],
+    urlHost: ["http://127.0.0.1:8060"],
     accessTokenData: {
         accessToken: [],
         refreshToken: [],
