@@ -1,0 +1,49 @@
+.form-login-username {
+    display: block;
+    margin: 10px auto;
+    height: 20px;
+    width: 180px
+}
+
+.form-login-password {
+    display: block;
+    margin: 10px auto;
+    height: 20px;
+    width: 180px
+}
+
+.form-login-verifyCode {
+    display: block;
+    margin: 10px auto;
+    height: 20px;
+    width: 180px
+}
+
+.form-login-verifyCode-img {
+    display: block;
+    margin: 10px auto;
+}
+
+.form-login-change {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.form-login-change :hover {
+    text-decoration: underline;
+}
+
+.form-login-button {
+    display: block;
+    margin: 10px auto;
+    height: 30px;
+    width: 70px;
+}
+
+.form-login-message {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    color: red
+}

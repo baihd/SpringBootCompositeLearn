@@ -1,22 +1,38 @@
 <!DOCTYPE HTML>
-<html xmlns="http://www.w3.org/1999/xhtml"
->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="oauth2" content="">
     <title>认证服务器端登录页面</title>
     <link href="/oauth2/css/login.css" rel="stylesheet">
+    <meta name="ctx" th:content="${#httpServletRequest.getContextPath()}" />
 </head>
 <body>
 <div class="container form-margin-top">
-    <form class="form-login" action="/oauth2/login" method="post">
+    <form id="login_form" th:action="@{/login}" method="post">
         <h2 class="form-login-heading" align="center">认证中心统一登录平台</h2>
-        <input type="text" name="username" class="form-login-text" placeholder="账号" required autofocus>
-        <input type="password" name="password" class="form-login-text" placeholder="密码" required>
-        <input type="checkbox" name="remember-me">自动登录
-        <button class="form-login-button" type="submit">登录</button>
+
+        <input type="text" name="username" class="form-login-username" placeholder="账号" required autofocus>
+
+        <input type="password" name="password" class="form-login-password" placeholder="密码" required>
+
+        <input type="text" name="kaptcha" class="form-login-verifyCode" placeholder="验证码">
+
+        <img th:src="@{/getKaptchaImage}" width="80" height="34" class="form-login-verifyCode-img" alt="验证码"/>
+
+        <a id="changeKaptchaImage" class="form-login-change">换一张</a>
+
+        <!--<input type="checkbox" name="remember-me">自动登录-->
+
+        <button id="login" class="form-login-button" type="submit">登录</button>
+
+        <span id="message" class="form-login-message"></span>
     </form>
 </div>
+
+
+<script src="../../oauth2/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../oauth2/js/login.js"></script>
 </body>
 </html>
