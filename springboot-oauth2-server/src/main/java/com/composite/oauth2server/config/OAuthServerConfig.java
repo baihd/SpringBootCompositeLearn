@@ -32,6 +32,9 @@ public class OAuthServerConfig extends AuthorizationServerConfigurerAdapter {
     private RedisConnectionFactory redisConnectionFactory;
 
     @Autowired
+    private RedisTokenStore redisTokenStore;
+
+    @Autowired
     private PasswordEncoder passwordEncoder;
 
     @Autowired
@@ -68,7 +71,7 @@ public class OAuthServerConfig extends AuthorizationServerConfigurerAdapter {
     public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
         // 配置tokenStore，保存到redis缓存中
         endpoints.authenticationManager(authenticationManager)
-                .tokenStore(new RedisTokenStore(redisConnectionFactory))
+                .tokenStore(redisTokenStore)
                 //不添加userDetailsService，刷新access_token时会报错
                 .userDetailsService(userDetailsService);
         // 使用最基本的InMemoryTokenStore生成token
@@ -79,6 +82,11 @@ public class OAuthServerConfig extends AuthorizationServerConfigurerAdapter {
     @Bean
     public TokenStore memoryTokenStore() {
         return new InMemoryTokenStore();
+    }
+
+    @Bean
+    public RedisTokenStore redisTokenStore() {
+        return new RedisTokenStore(redisConnectionFactory);
     }
 
 }

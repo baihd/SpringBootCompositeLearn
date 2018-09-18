@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -52,7 +53,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(WebSecurity web) throws Exception {
         //完全绕过spring security的所有filter
-        web.ignoring().antMatchers("/**/*.js", "/**/*.css", "/getKaptchaImage");
+        web.ignoring().antMatchers("/**/*.js", "/**/*.css");
     }
 
     @Override
@@ -62,6 +63,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //在认证用户名之前认证验证码，如果验证码错误，将不执行用户名和密码的认证
                 .addFilterBefore(new KaptchaAuthenticationFilter("/login", "/login?error=verifyCode"), UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
+                .antMatchers("/getKaptchaImage").permitAll()
+                .antMatchers(HttpMethod.POST,"/removeToken").permitAll()
                 //任何用户都可以访问以"/login"开头的URL
                 .antMatchers("/login").permitAll()
                 //尚未匹配的任何URL都要求用户进行身份验证
