@@ -1,0 +1,20 @@
+.form-login-username {
+
+}
+
+.form-login-password {
+
+}
+
+.form-signin-submit {
+
+}
+
+.form-signin-other-login {
+    cursor: pointer;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}

@@ -4,5 +4,10 @@ server:
       context-path: /ui
 
 spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/oauth2client?useSSL=false&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
   thymeleaf:
     cache: false

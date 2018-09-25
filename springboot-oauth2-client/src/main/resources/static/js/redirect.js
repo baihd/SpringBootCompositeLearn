@@ -18,6 +18,7 @@ redirect = {
         that.accessToken();
         that.checkToken();
         that.refreshToken();
+        that.deleteToken();
     },
     accessToken: function () {
         var that = this;
@@ -150,6 +151,33 @@ redirect = {
                         } else {
                             console.log(data);
                         }
+                    }
+                }
+            });
+        });
+    },
+
+    deleteToken: function () {
+        var that = this;
+        $("#deleteToken").on("click", function () {
+            var data = {
+                'clientId': 'client',
+                'userName': 'admin',
+                'accessToken': that.accessTokenData.accessToken
+            };
+            var requestUrl = that.urlHost + '/removeToken';
+            $.ajax({
+                url: requestUrl,
+                data: data,
+                type: "POST",
+                dataType: "json",
+                contentType: "application/x-www-form-urlencoded",
+                success: function (data) {
+                    $("#showDeleteTokenMessage").html("deleteToken------:" + data.resultMessage);
+                },
+                error: function (data) {
+                    if (!that.isEmpty(data)) {
+                        console.log(data);
                     }
                 }
             });

@@ -11,6 +11,11 @@ public class LoginController {
         return "login";
     }
 
+    @GetMapping("/register")
+    public String register() {
+        return "register";
+    }
+
     @GetMapping("/redirect")
     public String redirect() {
         return "redirect";
@@ -19,6 +24,11 @@ public class LoginController {
     @GetMapping("/password")
     public String password() {
         return "password";
+    }
+
+    @GetMapping("/index")
+    public String index() {
+        return "index";
     }
 
 }

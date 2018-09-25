@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.composite.oauth2client.dao.UserDao">
+    <sql id="BASE_TABLE">
+        user
+    </sql>
+    <sql id="BASE_COLUMN">
+        id,username,password
+    </sql>
+
+    <select id="findUserByName" parameterType="String" resultType="java.util.Map">
+        SELECT
+        <include refid="BASE_COLUMN"/>
+        FROM
+        <include refid="BASE_TABLE"/>
+        WHERE
+        username = #{name}
+    </select>
+
+    <select id="findUserByOtherUserName" parameterType="String" resultType="java.util.Map">
+        SELECT
+        user.id,user.username,user.password
+        FROM user
+        LEFT JOIN user_extra
+        ON user.username = user_extra.userName
+        WHERE user_extra.userName = #{name}
+    </select>
+
+    <insert id="saveUser" parameterType="String" keyProperty="id" useGeneratedKeys="true">
+        INSERT INTO user (username,password) VALUES (#{username},#{password})
+    </insert>
+
+
+</mapper>
