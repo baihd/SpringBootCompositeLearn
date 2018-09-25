@@ -1,5 +1,6 @@
 package com.composite.oauth2client.filter;
 
+import com.composite.oauth2client.config.IUserDetailsService;
 import com.composite.oauth2client.entity.AccessToken;
 import com.composite.oauth2client.entity.CheckToken;
 import com.composite.oauth2client.service.OAuth2Service;
@@ -14,6 +15,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler;
@@ -25,7 +27,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Map;
 
 public class ExtraAuthenticationFilter extends AbstractAuthenticationProcessingFilter {
 
@@ -36,6 +37,8 @@ public class ExtraAuthenticationFilter extends AbstractAuthenticationProcessingF
     private String servletPath;
 
     private OAuth2Service oAuth2Service = ApplicationContextUtils.getBean(OAuth2ServiceImpl.class);
+
+    private IUserDetailsService userDetailsService = ApplicationContextUtils.getBean(IUserDetailsService.class);
 
     private UserService userService = ApplicationContextUtils.getBean(UserServiceImpl.class);
 
@@ -64,7 +67,6 @@ public class ExtraAuthenticationFilter extends AbstractAuthenticationProcessingF
                     String[] queryStrs = queryStr.split("=");
                     if (queryStrs.length == 2) {
                         Authentication authentication = getAuthentication(queryStrs[1]);
-                        authentication = null;
                         if (authentication != null) {
                             SecurityContextHolder.getContext().setAuthentication(authentication);
                         } else {
@@ -88,11 +90,8 @@ public class ExtraAuthenticationFilter extends AbstractAuthenticationProcessingF
         try {
             AccessToken accessToken = oAuth2Service.getAccessToken(code);
             CheckToken checkToken = oAuth2Service.getCheckToken(accessToken.getAccessToken());
-            Map<String, Object> userMap = userService.findUserByOtherUserName(checkToken.getUserName());
-            String userName = userMap.get("userName").toString();
-            String password = userMap.get("password").toString();
-            UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(userName, password);
-            authentication = authenticationManager.authenticate(authenticationToken);
+            UserDetails userDetails = userDetailsService.loadUserByUsername(checkToken.getUserName());
+            authentication = new UsernamePasswordAuthenticationToken(userDetails, userDetails.getPassword(), userDetails.getAuthorities());
         } catch (Exception e) {
             logger.error("getAuthentication error:" + e.getMessage());
         }
