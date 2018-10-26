@@ -1,0 +1,15 @@
+version: '2'
+services:
+  filebeat:
+    image: olinicola/filebeat:1.0.1 
+    container_name: filebeat 
+    restart: always
+    network_mode: "bridge"
+    extra_hosts:
+       #这里的IP要是真实的IP，不能是127.0.0.1
+      - "logstash:10.0.16.150" 
+    volumes:
+      - ./conf/filebeat.yml:/etc/filebeat/filebeat.yml
+      - ./registry:/etc/registry
+      - /tmp:/tmp
+
