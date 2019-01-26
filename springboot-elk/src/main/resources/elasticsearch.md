@@ -9,4 +9,5 @@
 `curl -H "Content-Type: application/json" -XPUT "http://localhost:9200/_settings" -d'{"number_of_replicas" : 0}'`
 
 
+curl -H "Content-Type: application/json" -XPOST 'http://localhost:9200/logstash-2018.07/external/_delete_by_query?pretty' -d '{ "query": { "match_all": {} } }'
 

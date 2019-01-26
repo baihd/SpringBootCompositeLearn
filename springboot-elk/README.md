@@ -134,8 +134,8 @@ output {
 `sudo ln /opt/soft/node/bin/node /usr/local/bin/node`  
 `sudo ln /opt/soft/node/bin/npm /usr/local/bin/npm`
 ####3.安装grunt和grunt-cli
-`sudo apt-get install -g grunt`   
-`sudo apt-get install -g grunt-cli`
+`sudo npm install -g grunt`   
+`sudo npm install -g grunt-cli`
 ####4.解压elasticsearch-head
 `sudo unzip elasticsearch-head-master.zip`
 ####5.安装head
