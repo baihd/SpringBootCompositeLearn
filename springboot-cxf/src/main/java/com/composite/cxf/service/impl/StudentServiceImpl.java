@@ -15,13 +15,12 @@ import java.util.ArrayList;
 /**
  * 实现webservice接口，对外暴露 soap
  */
-@Component//由Spring管理
-@WebService(endpointInterface = "com.composite.cxf.service.StudentService") // webservice接口的全类名
+//由Spring管理
+@Component
+//webservice接口的全类名
+@WebService(endpointInterface = "com.composite.cxf.service.StudentService")
 public class StudentServiceImpl implements StudentService {
 
-    /**
-     * 注入spring bean
-     */
     @Autowired
     private StudentDao studentDao;
 
@@ -35,7 +34,7 @@ public class StudentServiceImpl implements StudentService {
      */
     @Override
     public Students getAllStudent(String ids) {
-        Students students = new Students(new ArrayList<Student>());
+        Students students = new Students(new ArrayList<>());
         // 得到json对象
         JSONObject json = JSONObject.parseObject(ids);
         // 获取对象的id列表

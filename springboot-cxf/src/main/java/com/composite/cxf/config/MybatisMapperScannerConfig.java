@@ -12,12 +12,15 @@ import org.springframework.context.annotation.Configuration;
 //由于MapperScannerConfigurer执行的比较早，所以必须有下面的注解
 @AutoConfigureAfter(MybatisConfig.class)
 public class MybatisMapperScannerConfig {
+
+    private static final String BASEPACKAGES = "com.composite.cxf.dao";
+
     @Bean
     public MapperScannerConfigurer mapperScannerConfigurer() {
         MapperScannerConfigurer mapperScannerConfigurer = new MapperScannerConfigurer();
         mapperScannerConfigurer.setSqlSessionFactoryBeanName("sqlSessionFactory");
         //每张表对应的*.java,interface类型的Java文件
-        mapperScannerConfigurer.setBasePackage("com.composite.cxf.dao");
+        mapperScannerConfigurer.setBasePackage(BASEPACKAGES);
         return mapperScannerConfigurer;
     }
 }
