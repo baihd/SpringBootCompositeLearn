@@ -11,6 +11,7 @@ public class WebServiceCXFClient {
         JaxWsProxyFactoryBean ps = new JaxWsProxyFactoryBean();
         ps.setAddress("http://127.0.0.1:8082/webservice/api/v1/student/get?wsdl");
         ps.setServiceClass(StudentService.class);
+        ps.getOutInterceptors().add(new AddHeaderInterceptor("zhangsan", "123456"));
         StudentService studentService = (StudentService) ps.create();
         studentService.getStudent(1);
         Student student = studentService.getStudent(1);
