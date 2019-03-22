@@ -1,9 +1,7 @@
 package com.composite.cxf.config;
 
-import com.composite.cxf.service.impl.StudentServiceImpl;
+import com.composite.cxf.service.StudentServiceImpl;
 import org.apache.cxf.bus.spring.SpringBus;
-import org.apache.cxf.interceptor.LoggingInInterceptor;
-import org.apache.cxf.interceptor.security.JAASLoginInterceptor;
 import org.apache.cxf.jaxws.EndpointImpl;
 import org.apache.cxf.transport.servlet.CXFServlet;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -43,7 +41,7 @@ public class CxfApiV1Config {
         EndpointImpl endpoint = new EndpointImpl(springBusV1(), studentServiceImpl);
         endpoint.publish(addr);
         //添加服务器端in权限拦截器,该AuthInterceptor就会负责检查用户名,密码是否正确
-        endpoint.getInInterceptors().add(new AuthInterceptor());
+//        endpoint.getInInterceptors().add(new AuthInterceptor());
         return endpoint;
     }
 

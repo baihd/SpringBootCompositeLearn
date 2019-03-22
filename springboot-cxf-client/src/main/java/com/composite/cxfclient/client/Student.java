@@ -3,7 +3,6 @@ package com.composite.cxfclient.client;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlSchemaType;
 import javax.xml.bind.annotation.XmlType;
 
 
@@ -21,7 +20,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="age" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="id" type="{http://www.w3.org/2001/XMLSchema}int" minOccurs="0"/&gt;
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
- *         &lt;element name="sex" type="{http://www.w3.org/2001/XMLSchema}unsignedShort"/&gt;
+ *         &lt;element name="sex" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -44,8 +43,7 @@ public class Student {
     protected Integer age;
     protected Integer id;
     protected String name;
-    @XmlSchemaType(name = "unsignedShort")
-    protected int sex;
+    protected String sex;
 
     /**
      * 获取address属性的值。
@@ -146,16 +144,24 @@ public class Student {
     /**
      * 获取sex属性的值。
      * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
      */
-    public int getSex() {
+    public String getSex() {
         return sex;
     }
 
     /**
      * 设置sex属性的值。
      * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
      */
-    public void setSex(int value) {
+    public void setSex(String value) {
         this.sex = value;
     }
 

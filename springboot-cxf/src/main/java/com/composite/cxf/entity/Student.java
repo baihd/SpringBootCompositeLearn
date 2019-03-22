@@ -11,7 +11,7 @@ public class Student implements Serializable {
     private static final long serialVersionUID = 1L;
     private Integer id;
     private String name;
-    private char sex;
+    private String sex;
     private String address;
     private Integer age;
 
@@ -19,8 +19,7 @@ public class Student implements Serializable {
         super();
     }
 
-    public Student(Integer id, String name, char sex, String address,
-                   Integer age) {
+    public Student(Integer id, String name, String sex, String address, Integer age) {
         super();
         this.id = id;
         this.name = name;
@@ -45,11 +44,11 @@ public class Student implements Serializable {
         this.name = name;
     }
 
-    public char getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(char sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 

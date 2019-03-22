@@ -6,6 +6,7 @@ import com.composite.cxf.entity.Students;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
+import javax.jws.WebResult;
 import javax.jws.WebService;
 
 
@@ -15,22 +16,18 @@ import javax.jws.WebService;
 @WebService
 public interface StudentService {
 
-    /**
-     * 查找一个学生
-     *
-     * @param id
-     * @return
-     */
-    @WebMethod
-    Student getStudent(@WebParam(name = "id") Integer id);
+    //action定义一个soapAction="access"用于找到这个方法以执行
+    //operationName指定与此方法相匹配的wsdl:operation的名称
+    @WebMethod(action = "getStudentAction", operationName = "getStudentOperation")
+    //定义返回值的名称
+    @WebResult(name = "resultStudent")
+    Student getStudent(@WebParam(name = "id", targetNamespace = "http://service.cxf.composite.com/") Integer id);
 
-    /**
-     * 查找多个学生
-     *
-     * @param ids
-     * @return
-     */
-    @WebMethod
-    Students getAllStudent(@WebParam(name = "ids") String ids);
+    //action定义一个soapAction="access"用于找到这个方法以执行
+    //operationName指定与此方法相匹配的wsdl:operation的名称
+    @WebMethod(action = "getAllStudentAction", operationName = "getAllStudentOperation")
+    //定义返回值的名称
+    @WebResult(name = "resultAllStudent")
+    Students getAllStudent(@WebParam(name = "ids", targetNamespace = "http://service.cxf.composite.com/") String ids);
 
 }

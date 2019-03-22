@@ -1,4 +1,4 @@
-package com.composite.cxfclient;
+package com.composite.cxfclient.cxfClient;
 
 import org.apache.cxf.binding.soap.SoapMessage;
 import org.apache.cxf.headers.Header;

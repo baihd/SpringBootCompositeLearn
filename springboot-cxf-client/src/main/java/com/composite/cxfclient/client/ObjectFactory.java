@@ -26,10 +26,10 @@ public class ObjectFactory {
 
     private final static QName _Student_QNAME = new QName("http://service.cxf.composite.com/", "Student");
     private final static QName _Students_QNAME = new QName("http://service.cxf.composite.com/", "Students");
-    private final static QName _GetAllStudent_QNAME = new QName("http://service.cxf.composite.com/", "getAllStudent");
-    private final static QName _GetAllStudentResponse_QNAME = new QName("http://service.cxf.composite.com/", "getAllStudentResponse");
-    private final static QName _GetStudent_QNAME = new QName("http://service.cxf.composite.com/", "getStudent");
-    private final static QName _GetStudentResponse_QNAME = new QName("http://service.cxf.composite.com/", "getStudentResponse");
+    private final static QName _GetAllStudentOperation_QNAME = new QName("http://service.cxf.composite.com/", "getAllStudentOperation");
+    private final static QName _GetAllStudentOperationResponse_QNAME = new QName("http://service.cxf.composite.com/", "getAllStudentOperationResponse");
+    private final static QName _GetStudentOperation_QNAME = new QName("http://service.cxf.composite.com/", "getStudentOperation");
+    private final static QName _GetStudentOperationResponse_QNAME = new QName("http://service.cxf.composite.com/", "getStudentOperationResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.composite.cxfclient.client
@@ -55,35 +55,35 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetAllStudent }
+     * Create an instance of {@link GetAllStudentOperation }
      * 
      */
-    public GetAllStudent createGetAllStudent() {
-        return new GetAllStudent();
+    public GetAllStudentOperation createGetAllStudentOperation() {
+        return new GetAllStudentOperation();
     }
 
     /**
-     * Create an instance of {@link GetAllStudentResponse }
+     * Create an instance of {@link GetAllStudentOperationResponse }
      * 
      */
-    public GetAllStudentResponse createGetAllStudentResponse() {
-        return new GetAllStudentResponse();
+    public GetAllStudentOperationResponse createGetAllStudentOperationResponse() {
+        return new GetAllStudentOperationResponse();
     }
 
     /**
-     * Create an instance of {@link GetStudent }
+     * Create an instance of {@link GetStudentOperation }
      * 
      */
-    public GetStudent createGetStudent() {
-        return new GetStudent();
+    public GetStudentOperation createGetStudentOperation() {
+        return new GetStudentOperation();
     }
 
     /**
-     * Create an instance of {@link GetStudentResponse }
+     * Create an instance of {@link GetStudentOperationResponse }
      * 
      */
-    public GetStudentResponse createGetStudentResponse() {
-        return new GetStudentResponse();
+    public GetStudentOperationResponse createGetStudentOperationResponse() {
+        return new GetStudentOperationResponse();
     }
 
     /**
@@ -113,55 +113,55 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllStudent }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllStudentOperation }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetAllStudent }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link GetAllStudentOperation }{@code >}
      */
-    @XmlElementDecl(namespace = "http://service.cxf.composite.com/", name = "getAllStudent")
-    public JAXBElement<GetAllStudent> createGetAllStudent(GetAllStudent value) {
-        return new JAXBElement<GetAllStudent>(_GetAllStudent_QNAME, GetAllStudent.class, null, value);
+    @XmlElementDecl(namespace = "http://service.cxf.composite.com/", name = "getAllStudentOperation")
+    public JAXBElement<GetAllStudentOperation> createGetAllStudentOperation(GetAllStudentOperation value) {
+        return new JAXBElement<GetAllStudentOperation>(_GetAllStudentOperation_QNAME, GetAllStudentOperation.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllStudentResponse }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetAllStudentOperationResponse }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetAllStudentResponse }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link GetAllStudentOperationResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://service.cxf.composite.com/", name = "getAllStudentResponse")
-    public JAXBElement<GetAllStudentResponse> createGetAllStudentResponse(GetAllStudentResponse value) {
-        return new JAXBElement<GetAllStudentResponse>(_GetAllStudentResponse_QNAME, GetAllStudentResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://service.cxf.composite.com/", name = "getAllStudentOperationResponse")
+    public JAXBElement<GetAllStudentOperationResponse> createGetAllStudentOperationResponse(GetAllStudentOperationResponse value) {
+        return new JAXBElement<GetAllStudentOperationResponse>(_GetAllStudentOperationResponse_QNAME, GetAllStudentOperationResponse.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetStudent }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetStudentOperation }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetStudent }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link GetStudentOperation }{@code >}
      */
-    @XmlElementDecl(namespace = "http://service.cxf.composite.com/", name = "getStudent")
-    public JAXBElement<GetStudent> createGetStudent(GetStudent value) {
-        return new JAXBElement<GetStudent>(_GetStudent_QNAME, GetStudent.class, null, value);
+    @XmlElementDecl(namespace = "http://service.cxf.composite.com/", name = "getStudentOperation")
+    public JAXBElement<GetStudentOperation> createGetStudentOperation(GetStudentOperation value) {
+        return new JAXBElement<GetStudentOperation>(_GetStudentOperation_QNAME, GetStudentOperation.class, null, value);
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link GetStudentResponse }{@code >}
+     * Create an instance of {@link JAXBElement }{@code <}{@link GetStudentOperationResponse }{@code >}
      * 
      * @param value
      *     Java instance representing xml element's value.
      * @return
-     *     the new instance of {@link JAXBElement }{@code <}{@link GetStudentResponse }{@code >}
+     *     the new instance of {@link JAXBElement }{@code <}{@link GetStudentOperationResponse }{@code >}
      */
-    @XmlElementDecl(namespace = "http://service.cxf.composite.com/", name = "getStudentResponse")
-    public JAXBElement<GetStudentResponse> createGetStudentResponse(GetStudentResponse value) {
-        return new JAXBElement<GetStudentResponse>(_GetStudentResponse_QNAME, GetStudentResponse.class, null, value);
+    @XmlElementDecl(namespace = "http://service.cxf.composite.com/", name = "getStudentOperationResponse")
+    public JAXBElement<GetStudentOperationResponse> createGetStudentOperationResponse(GetStudentOperationResponse value) {
+        return new JAXBElement<GetStudentOperationResponse>(_GetStudentOperationResponse_QNAME, GetStudentOperationResponse.class, null, value);
     }
 
 }

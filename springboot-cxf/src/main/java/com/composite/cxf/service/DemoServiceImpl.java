@@ -1,4 +1,4 @@
-package com.composite.cxf.service.impl;
+package com.composite.cxf.service;
 
 import com.alibaba.fastjson.JSONObject;
 import com.composite.cxf.service.DemoService;
