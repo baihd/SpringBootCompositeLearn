@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.composite.lock.dao.EmployeeDao">
+
+    <select id="findById" resultType="com.composite.lock.entity.Employee">
+        SELECT * FROM employee WHERE id = #{id}
+    </select>
+
+    <select id="findByIdWithPessimisticLock" resultType="com.composite.lock.entity.Employee">
+        SELECT * FROM employee WHERE id = #{id} FOR UPDATE
+    </select>
+
+    <update id="updateEmployee">
+        UPDATE employee SET money = #{e.money} WHERE id = #{e.id}
+    </update>
+
+    <update id="updateEmployeeWithOptimisticLock">
+        UPDATE employee SET money = #{e.money}, version = #{e.version} + 1 WHERE id = #{e.id} AND #{e.version} = version
+    </update>
+
+</mapper>
