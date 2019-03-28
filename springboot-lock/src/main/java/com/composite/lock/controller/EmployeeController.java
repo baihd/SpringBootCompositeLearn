@@ -1,6 +1,7 @@
 package com.composite.lock.controller;
 
 import com.composite.lock.service.EmployeeService;
+import com.composite.lock.utils.TransactionUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,9 @@ public class EmployeeController {
 
     @Autowired
     private EmployeeService employeeService;
+
+    @Autowired
+    private TransactionUtil transactionUtil;
 
     /**
      * 未加锁
@@ -37,9 +41,9 @@ public class EmployeeController {
     @ResponseBody
     public void increaseMoneyWithPessimisticLock() {
         LOGGER.info("start increaseMoneyWithPessimisticLock");
-        int threadCount = 100;
+        int threadCount = 200;
         while (threadCount-- > 0) {
-            new Thread(() -> employeeService.increaseMoneyWithPessimisticLock(1)).start();
+            new Thread(() -> transactionUtil.transact(s -> employeeService.increaseMoneyWithPessimisticLock(1))).start();
         }
         LOGGER.info("end increaseMoneyWithPessimisticLock");
     }
