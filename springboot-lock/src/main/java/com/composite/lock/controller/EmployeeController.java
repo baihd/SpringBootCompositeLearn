@@ -43,7 +43,14 @@ public class EmployeeController {
         LOGGER.info("start increaseMoneyWithPessimisticLock");
         int threadCount = 200;
         while (threadCount-- > 0) {
-            new Thread(() -> transactionUtil.transact(s -> employeeService.increaseMoneyWithPessimisticLock(1))).start();
+            //二者都可
+            //在另一个线程执行
+            //select * from employee where id =1 for update;会暂停当前线程
+            //select * from employee where id =1;不会暂停当前线程
+            //自动提交
+            new Thread(() -> employeeService.increaseMoneyWithPessimisticLock(1)).start();
+            //手动提交
+            //new Thread(() -> transactionUtil.transact(s -> employeeService.increaseMoneyWithPessimisticLock(1))).start();
         }
         LOGGER.info("end increaseMoneyWithPessimisticLock");
     }
