@@ -1,4 +1,4 @@
-#一、安装依赖包jdk8：
+##一、安装jdk1.8：
 ###1.如果没有则创建目录:/usr/lib/jvm
 `sudo mkdir /usr/lib/jvm`  
 ###2.解压到 /usr/lib/jvm/ 下
@@ -17,7 +17,7 @@ export PATH=${JAVA_HOME}/bin:$PATH
 ####查看java版本
 `java -version`
 
-#二、安装Logstash：
+##二、安装LogStash：
 ###1.解压logstash-2.3.3.tar.gz
 `sudo tar xvzf logstash-2.3.3.tar.gz`
 ###2.在logstash-2.3.3目录下创建logstash-test.conf配置文件，内容如下：
@@ -31,13 +31,13 @@ output {
 本例中input定义了一个叫"stdin"的input，output定义一个叫"stdout"的output。
 无论我们输入什么字符，Logstash都会按照某种格式来返回我们输入的字符，
 其中output被定义为"stdout"并使用了codec参数来指定logstash输出格式。*
-####3.启动：
+###3.启动：
 `./bin/logstash agent -f logstash-test.conf`
-####4.退出
+###4.退出
 *启动后，在屏幕上输入什么内容，就会在console里显示出来。
 说明安装成功。使用Ctrl+C退出进程。*
 
-#三、安装elasticsearch：
+##三、安装elasticsearch：
 `sudo tar xvzf elasticsearch-2.3.3.tar.gz`
 ###1.修改配置文件，允许远程访问：
 `sudo vim elasticsearch-2.3.3/config/elasticsearch.yml`  
@@ -47,7 +47,8 @@ output {
 `./bin/elasticsearch -d`
 ###3.查找ES进程
 `ps -ef | grep elastic`
-#四、安装elasticsearch插件head：
+
+##四、安装elasticsearch插件head：
 `cd elasticsearch-2.3.3`  
 `./bin/plugin install mobz/elasticsearch-head`
 ###1.测试elasticsearch与logstash是否能链接成功：
@@ -67,7 +68,7 @@ output {
 ###3.访问地址：
 >http://127.0.0.1:9200/_plugin/head/
 
-#五、安装kibana：
+##五、安装kibana：
 `tar xvzf kibana-4.5.1-linux-x64.tar.gz`
 ###1.修改kibana.yml
 `cd kibana-4.5.1-linux-x64`  
@@ -95,9 +96,9 @@ kibana.index: ".kibana
 点击“Discover”选项卡，可以搜索和浏览elasticsearch中的数据，
 默认搜索最近15分钟的数据，也可以自定义。至此，ELK平台已经部署完成。*
 
-###六.配置logstash作为Indexer：
+##六.配置logstash作为Indexer：
 
-####1.将logstash配置为索引器，并将logstash的日志数据存储到elasticsearch。
+###1.将logstash配置为索引器，并将logstash的日志数据存储到elasticsearch。
 *本案例是索引本地系统日志*
 *在logstash工作目录中创建配置文件logstash-indexer.conf，内容如下：*
 ```
@@ -119,34 +120,34 @@ output {
   }
 }
 ```
-###七.安装elasticsearch5.X以上
+##七.安装elasticsearch5.X以上
 `sudo tar zxvf elasticsearch-6.3.1.tar.gz`
-####1.修改配置文件，允许远程访问： 
+###1.修改配置文件，允许远程访问： 
 `sudo vim elasticsearch-6.3.1/config/elasticsearch.yml` 
-####2.修改network 
+###2.修改network 
 `network.host: 0.0.0.0` 
 
-###八.安装elasticsearch-head插件
+##八.安装elasticsearch-head插件
 `sudo unzip node-v8.11.3-linux-x64.zip`
-####1.修改目录名称
+###1.修改目录名称
 `sudo mv node-v8.11.3-linux-x64.zip node`
-####2.将node和npm设置为全局
+###2.将node和npm设置为全局
 `sudo ln /opt/soft/node/bin/node /usr/local/bin/node`  
 `sudo ln /opt/soft/node/bin/npm /usr/local/bin/npm`
-####3.安装grunt和grunt-cli
+###3.安装grunt和grunt-cli
 `sudo npm install -g grunt`   
 `sudo npm install -g grunt-cli`
-####4.解压elasticsearch-head
+###4.解压elasticsearch-head
 `sudo unzip elasticsearch-head-master.zip`
-####5.安装head
+###5.安装head
 `cd elasticsearch-head`  
 `npm install`  
-####6.配置head
-#####1.修改app.js
+###6.配置head
+####1.修改app.js
 `vim elasticsearch-head/_site/app.js`  
-#####2.修改localhost为elasticsearch的ip
+####2.修改localhost为elasticsearch的ip
 `this.base_uri = this.config.base_uri || this.prefs.get("app-base_uri") || "http://localhost:9200";`
-#####3.修改Gruntfile.js
+####3.修改Gruntfile.js
 ```
 connect: {
     server: {
@@ -159,12 +160,12 @@ connect: {
     }   
 }
 ```
-####7.配置elasticsearch
+###7.配置elasticsearch
 `vim elasticsearch.yml`
-#####增加以下两行
+####增加以下两行
 `http.cors.enabled: true`  
 `http.cors.allow-origin: "*"`  
-####8.启动elasticsearch和head插件
+###8.启动elasticsearch和head插件
 `cd /opt/soft/elasticsearch-6.3.1/bin/`  
 `./elasticsearch`  
 `./elasticsearch -d`  
@@ -172,42 +173,42 @@ connect: {
 `npm start`  
 `nohup npm start &`  
 `nohup grunt server &`
-####9.访问
+###9.访问
 >http://127.0.0.1:9100
-####10.停止elasticsearch
+###10.停止elasticsearch
 `ps -ef|grep elastic`  
 `kill -9 端口号`
-####11.停止head
+###11.停止head
 `netstat -tunlp|grep 9100`  
 `kill -9 端口号`
 
-###九.安装logstash-6.3.1
+##九.安装logstash-6.3.1
 `sudo tar zxvf logstash-6.3.1.tar.gz`  
-####1.启动：
+###1.启动：
 `./bin/logstash -f logstash-test.conf`
 `nohup ./bin/logstash -f ./configs &`
-####2.停止
+###2.停止
 `ps -ef |grep logstash`  
 `kill -9 端口号`
 
 
-###十.安装kibana-6.3.1-linux-x86_64
+##十.安装kibana-6.3.1-linux-x86_64
 `sudo tar zxvf kibana-6.3.1-linux-x86_64.tar.gz`
-####1.修改配置  
+###1.修改配置  
 `sudo vim /opt/soft/kibana-6.3.1-linux-x86_64/config/kibana.yml`
 `server.host: "10.0.16.150"`  
 `elasticsearch.url: "http://10.0.16.150:9200"`  
-####2.启动
+###2.启动
 `cd kibana-6.3.1-linux-x86_64/bin`  
 `./kibana`  
 `nohup ./bin/kibana &`  
-####3.停止
+###3.停止
 `netstat -anltp|grep 5601`  
 `kill -9 端口号`
 
-###十一.安装filebeat-6.3.1-linux-x86_64
+##十一.安装filebeat-6.3.1-linux-x86_64
 `sudo tar zxvf filebeat-6.3.1-linux-x86_64.tar.gz`
-####1.修改配置  
+###1.修改配置  
 `sudo vim filebeat.yml`
 ```
 filebeat.inputs:
@@ -226,14 +227,14 @@ output.logstash:
   # The Logstash hosts
   hosts: ["localhost:5044"]
 ```
-####2.启动
+###2.启动
 `./filebeat -e -c filebeat.yml -d "publish"`  
 `nohup ./filebeat -e -c filebeat.yml >/dev/null 2>&1 &`
-####3.停止
+###3.停止
 `ps -ef |grep filebeat`  
 `kill -9 端口号`
 
-###十二.filebeat在logstash中的配置
+##十二.filebeat在logstash中的配置
 ```
 input {
   beats{
