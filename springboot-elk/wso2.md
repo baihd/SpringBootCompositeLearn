@@ -165,7 +165,7 @@
 * 1.在APIS菜单中，单击API的缩略图以将其打开。 
 * 2.单击API的文档选项卡，然后单击添加新文档。
     ![avatar](/wso2/wso2_06_01.png)
-* 3.出现文档选项。请注意，您可以通过URL或文件内联创建文档。对于内联文档，您可以直接从API发布者界面编辑内容。你有几种文件类型：
+* 3.出现文档选项。请注意，你可以通过URL或文件内联创建文档。对于内联文档，你可以直接从API发布者界面编辑内容。你有几种文件类型：
     * How To
     * 样本和SDK
     * 公共论坛/支持论坛（仅限外部链接）
@@ -175,7 +175,7 @@
     ![avatar](/wso2/wso2_06_02.png)
 * 5.添加文档后，单击“编辑内容”以打开嵌入式编辑器。
     ![avatar](/wso2/wso2_06_03.png)
-* 6.输入您的API文档，然后单击“保存并关闭”。
+* 6.输入你的API文档，然后单击“保存并关闭”。
     ![avatar](/wso2/wso2_06_04.png)
     
 ## 七、对API进行版本控制
@@ -212,32 +212,32 @@
 
 ## 十、订阅API
 * 1.转到API商店`https://<hostname>:9443/store`，并使用注册链接创建帐户。
-    * 默认情况下，通过API Store注册的用户将分配该subscriber角色。因此，您无需通过管理控制台指定角色，以便能够将API包含在API中。
+    * 默认情况下，通过API Store注册的用户将分配该subscriber角色。因此，你无需通过管理控制台指定角色，以便能够将API包含在API中。
     ![avatar](/wso2/wso2_10_01.png)
 * 2.填写“注册”表单中的详细信息，然后单击“注册”。
     * 通过登录管理控制台`https：//localhost：9443/carbon`，并访问用户和角色>用户>列表，可以查看使用API Store注册注册的用户。
     ![avatar](/wso2/wso2_10_02.png)
     * 注册中输入的详细信息将在管理控制台中与每个用户相关的默认配置文件中更新。
     ![avatar](/wso2/wso2_10_03.png)
-* 3.注册后，登录API Store并单击PhoneVerification 2.0.0 您之前发布的API。
-* 4.请注意，您现在可以看到订阅选项。选择默认应用程序和Bronze层。单击订阅。
+* 3.注册后，登录API Store并单击PhoneVerification 2.0.0 你之前发布的API。
+* 4.请注意，你现在可以看到订阅选项。选择默认应用程序和Bronze层。单击订阅。
     ![avatar](/wso2/wso2_10_04.png)
 * 5.订阅成功后，单击显示的信息消息中的查看订阅以查看订阅。
     ![avatar](/wso2/wso2_10_05.png)
-* 6.单击应用程序的“生产密钥”选项卡，然后单击“生成密钥”以生成稍后用于调用API的访问令牌。如果您之前已生成密钥，请单击“重新生成”。
-    * 提示：您可以在给定的文本框中设置令牌有效期。默认情况下，它设置为一小时。如果设置负值（例如，-1），则令牌将永不过期。
+* 6.单击应用程序的“生产密钥”选项卡，然后单击“生成密钥”以生成稍后用于调用API的访问令牌。如果你之前已生成密钥，请单击“重新生成”。
+    * 提示：你可以在给定的文本框中设置令牌有效期。默认情况下，它设置为一小时。如果设置负值（例如，-1），则令牌将永不过期。
     ![avatar](/wso2/wso2_10_06.png)
 
 ## 十一、调用API
 * 1.单击API Store中的API菜单，然后单击要调用的API。API打开后，转到其API控制台选项卡。
     ![avatar](/wso2/wso2_11_01.png)
-* 2.展开资源的GET方法CheckPhoneNumber。请注意，您在创建交互式文档时添加的参数现在会显示其描述，以便作为订阅者，您知道如何调用此API。
+* 2.展开资源的GET方法CheckPhoneNumber。请注意，你在创建交互式文档时添加的参数现在会显示其描述，以便作为订阅者，你知道如何调用此API。
     ![avatar](/wso2/wso2_11_02.png) 
 * 3.为PhoneNumber and提供示例值，LicenseKey然后单击Try it out以调用API。
     ![avatar](/wso2/wso2_11_03.png) 
 * 4.请注意API调用的响应。由于我们在此示例中使用了有效的电话号码，因此响应有效。
     ![avatar](/wso2/wso2_11_04.png) 
-* 5.您已使用API控制台调用了API。
+* 5.你已使用API控制台调用了API。
     
 ## 十二、使用API Publisher URLs映射后端URL的参数
 * 1.本章介绍如何将后端URL映射到API Publisher中所需的模式。请注意以下事项：
@@ -271,7 +271,7 @@
     | Resources | URL pattern：/{businessId}，Reques types：GET|
     ![avatar](/wso2/wso2_12_04.png)
     ![avatar](/wso2/wso2_12_05.png)
-   * b.“Implement”选项卡打开。提供下表中的信息。 选择Enable Message Mediation,在In Flow下选择RemovePostfixSequence
+   * b.“Implement”选项卡打开。提供下表中的信息。 选择Enable Message Mediation，在In Flow下选择RemovePostfixSequence
     | Field | Sample value |
     | ------ | ------ | 
     | Endpoint type | HTTP/REST endpoint |
