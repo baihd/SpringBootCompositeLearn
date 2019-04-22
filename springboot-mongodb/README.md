@@ -56,3 +56,11 @@
 ##删除数据
 ### 相当于：`delete from student where sname='chenliu';`
 ### `db.myCollection.remove({sname: 'chenliu'})`
+
+##可视化工具robo3t
+
+##curl语句
+`curl -v -X GET http://127.0.0.1:8065/employees/`
+`curl -v -X POST http://127.0.0.1:8065/employees/`
+`curl -v -X PUT http://127.0.0.1:8065/employees/`
+`curl -v -X DELETE http://127.0.0.1:8065/employees/`
