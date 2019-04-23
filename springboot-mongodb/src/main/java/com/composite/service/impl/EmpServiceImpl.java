@@ -66,7 +66,7 @@ public class EmpServiceImpl implements EmpService {
 
     @Override
     public String putEmployee() {
-        //修改全部age为10的数据中的name和age
+        //修改全部age为30的数据中的name和age
         Query query = Query.query(Criteria.where("age").is(30));
         Update update = Update.update("name", "zhangsan").set("age", 20);
         UpdateResult updateResult = masterMongoTemplate.updateMulti(query, update, Employee.class);
@@ -83,7 +83,7 @@ public class EmpServiceImpl implements EmpService {
 
     @Override
     public String deleteEmployee() {
-        Query query = Query.query(Criteria.where("name").is("zhangsan1"));
+        Query query = Query.query(Criteria.where("name").is("zhangsan"));
         DeleteResult deleteResult = masterMongoTemplate.remove(query, Employee.class);
         System.out.println(deleteResult.getDeletedCount());
         return "success";
@@ -105,7 +105,7 @@ public class EmpServiceImpl implements EmpService {
         return query;
     }
 
-    public List<Employee> getEmployeeListByAggregation(int pageNum, int pageSize, Criteria criteria, Sort sort, String collectionName) {
+    private List<Employee> getEmployeeListByAggregation(int pageNum, int pageSize, Criteria criteria, Sort sort, String collectionName) {
         //起始startRows为0
         long startRows = (long) ((pageNum - 1) * pageSize);
         Aggregation aggregation = Aggregation.newAggregation(
@@ -119,7 +119,7 @@ public class EmpServiceImpl implements EmpService {
         return employeeMapList;
     }
 
-    public int getCountByAggregation(Criteria criteria, String collectionName) {
+    private int getCountByAggregation(Criteria criteria, String collectionName) {
         Aggregation aggregation = Aggregation.newAggregation(
                 Aggregation.match(criteria)
         );
