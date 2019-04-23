@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/employees")
@@ -17,7 +18,7 @@ public class EmpController {
     private EmpService empService;
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public List<Employee> getEmployeeList() {
+    public Map<String, Object> getEmployeeList() {
         return empService.getEmployeeList();
     }
 

@@ -3,10 +3,11 @@ package com.composite.service;
 import com.composite.domain.Employee;
 
 import java.util.List;
+import java.util.Map;
 
 public interface EmpService {
 
-    List<Employee> getEmployeeList();
+    Map<String, Object> getEmployeeList();
 
     String postEmployee();
 

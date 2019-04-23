@@ -9,13 +9,17 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
+import org.springframework.data.mongodb.core.aggregation.AggregationResults;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class EmpServiceImpl implements EmpService {
@@ -24,36 +28,38 @@ public class EmpServiceImpl implements EmpService {
     @Qualifier("masterMongoTemplate")
     private MongoTemplate masterMongoTemplate;
 
-    @Autowired
-    @Qualifier("slaveMongoTemplate")
-    private MongoTemplate slaveMongoTemplate;
-
-
     @Override
-    public List<Employee> getEmployeeList() {
-        Query query = new Query();
-        //is查询
-        query.addCriteria(Criteria.where("name").is("zhangsan"));
-        //正则查询以A开头
-        //query.addCriteria(Criteria.where("name").regex("^z"));
-        //GT（大于）和LT（小于）运算符
-        query.addCriteria(Criteria.where("age").gt(10).lt(50));
-        //结果排序
-        query.with(new Sort(Sort.Direction.ASC, "age"));
-        //分页
-        query.with(PageRequest.of(0, 20));
+    public Map<String, Object> getEmployeeList() {
+        Map<String, Object> employeeMapList = new HashMap<>();
 
+        //查询方法1
+        Query query = getEmployeeListQuery();
         List<Employee> employeeList = masterMongoTemplate.find(query, Employee.class);
-        return employeeList;
+        int count = (int) masterMongoTemplate.count(query, Employee.class);
+
+        //查询方法2聚合查询
+        Criteria criteria = Criteria.where("name").regex("^z");
+        Sort sort = new Sort(Sort.Direction.ASC, "name");
+        Integer pageNum = 1;
+        Integer pageSize = 10;
+        String collectionName = "employeeD";
+        List<Employee> employeeListByAggregation = getEmployeeListByAggregation(pageNum, pageSize, criteria, sort, collectionName);
+        int countByAggregation = getCountByAggregation(criteria, collectionName);
+
+        employeeMapList.put("list", employeeList);
+        employeeMapList.put("count", count);
+        return employeeMapList;
     }
 
     @Override
     public String postEmployee() {
         List<Employee> employeeList = new ArrayList<>();
-        Employee employee = new Employee();
-        employee.setName("zhangsan");
-        employee.setAge(30);
-        employeeList.add(employee);
+        for (int i = 0; i < 100; i++) {
+            Employee employee = new Employee();
+            employee.setName("zhangsan" + i);
+            employee.setAge(30);
+            employeeList.add(employee);
+        }
         masterMongoTemplate.insert(employeeList, Employee.class);
         return "success";
     }
@@ -81,5 +87,45 @@ public class EmpServiceImpl implements EmpService {
         DeleteResult deleteResult = masterMongoTemplate.remove(query, Employee.class);
         System.out.println(deleteResult.getDeletedCount());
         return "success";
+    }
+
+
+    private Query getEmployeeListQuery() {
+        Query query = new Query();
+        //is查询
+        //query.addCriteria(Criteria.where("name").is("zhangsan"));
+        //正则查询以A开头
+        query.addCriteria(Criteria.where("name").regex("^z"));
+        //GT（大于）和LT（小于）运算符
+        query.addCriteria(Criteria.where("age").gt(10).lt(50));
+        //结果排序
+        query.with(new Sort(Sort.Direction.ASC, "name"));
+        //分页,起始page为0
+        query.with(PageRequest.of(0, 10));
+        return query;
+    }
+
+    public List<Employee> getEmployeeListByAggregation(int pageNum, int pageSize, Criteria criteria, Sort sort, String collectionName) {
+        //起始startRows为0
+        long startRows = (long) ((pageNum - 1) * pageSize);
+        Aggregation aggregation = Aggregation.newAggregation(
+                Aggregation.match(criteria),
+                Aggregation.sort(sort),
+                Aggregation.skip(startRows),
+                Aggregation.limit(pageSize)
+        );
+        AggregationResults<Employee> aggregationResults = masterMongoTemplate.aggregate(aggregation, collectionName, Employee.class);
+        List<Employee> employeeMapList = aggregationResults.getMappedResults();
+        return employeeMapList;
+    }
+
+    public int getCountByAggregation(Criteria criteria, String collectionName) {
+        Aggregation aggregation = Aggregation.newAggregation(
+                Aggregation.match(criteria)
+        );
+        AggregationResults<Employee> aggregationResults = masterMongoTemplate.aggregate(aggregation, collectionName, Employee.class);
+        List<Employee> employeeMapList = aggregationResults.getMappedResults();
+        int count = employeeMapList.size();
+        return count;
     }
 }

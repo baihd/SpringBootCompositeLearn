@@ -2,7 +2,14 @@ package com.composite.domain;
 
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.CompoundIndex;
+import org.springframework.data.mongodb.core.index.CompoundIndexes;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+//指定集合
+@Document(collection = "employeeD")
+//复合索引，加复合索引后通过复合索引字段查询将大大提高速度
+@CompoundIndexes({@CompoundIndex(name = "nameAge_index", def = "{'name':-1,'age':1}")})
 public class Employee {
     @Id
     private ObjectId id;
