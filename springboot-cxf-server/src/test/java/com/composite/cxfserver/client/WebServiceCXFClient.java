@@ -10,7 +10,7 @@ public class WebServiceCXFClient {
         JaxWsProxyFactoryBean ps = new JaxWsProxyFactoryBean();
         ps.setAddress("http://127.0.0.1:8050/webservice/api/v1/accident?wsdl");
         ps.setServiceClass(AccidentService.class);
-        ps.getOutInterceptors().add(new AddHeaderInterceptor("zhangsan", "123456"));
+        //ps.getOutInterceptors().add(new AddHeaderInterceptor("zhangsan", "123456"));
         AccidentService accidentService = (AccidentService) ps.create();
         ResponseBean responseBean = accidentService.acceptAccident("");
         System.out.println(responseBean);

@@ -10,6 +10,7 @@
 		<!-- 将积极加载改为消极加载，即延迟加载 -->
 		<setting name="aggressiveLazyLoading" value="false" />
 		<setting name="cacheEnabled" value="true" />
+		<setting name="logImpl" value="LOG4J2"></setting>
 	</settings>
 
 </configuration>
